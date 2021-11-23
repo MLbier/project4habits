@@ -1,4 +1,4 @@
-class ActivitesController < ApplicationController
+class ActivitiesController < ApplicationController
   def index
     # @activities = Activity.all
     if params[:query].present?
