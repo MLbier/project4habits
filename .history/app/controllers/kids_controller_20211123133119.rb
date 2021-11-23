@@ -4,4 +4,5 @@ class KidsController < ApplicationController
     @activities = Activity.all
   end
 
+  def
 end

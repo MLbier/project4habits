@@ -82,8 +82,4 @@ kid5.save
 kid6.save
 kid7.save
 
-slot1.activity = activity1
-slot2.activity = activity2
-slot3.activity = activity3
-
 puts 'saved'

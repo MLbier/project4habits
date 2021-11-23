@@ -3,5 +3,4 @@ class KidsController < ApplicationController
     @kid = Kid.find(params[:id])
     @activities = Activity.all
   end
-
 end
