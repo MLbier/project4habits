@@ -27,15 +27,16 @@ puts 'everything destroyed'
 user1 = User.create!(email: "user1@gmail.com", password: "12345678")
 user2 = User.create!(email: "user2@gmail.com", password: "12345678")
 user3 = User.create!(email: "user3@gmail.com", password: "12345678")
+
 user4 = User.create!(email: "user4@gmail.com", password: "12345678")
 user5 = User.create!(email: "user5@gmail.com", password: "12345678")
 user6 = User.create!(email: "user6@gmail.com", password: "12345678")
 
 puts 'users created'
 
-activity1 = Activity.create!(name: 'Boxing', description: 'Lessons are done in groupes of 2. Child has to be focused and well behaved(follow the rules). Equipment is not needed', price: '25', location: 'Goltsteinstr. 150, Cologne, Germany', availability:"2021-12-20", duration: '60', user_id: user1.id)
-activity2 = Activity.create!(name: 'Basketball', description: 'Basketball is a team sport and we will not only teach you child to play basketball but also to become more disciplined', price: '20', location: 'Rudower Straße 44, Berlin, Germany', availability:"2021-11-17", duration: '90', user_id: user1.id)
-activity3 = Activity.create!(name: 'Hockey', description: 'Play Hockey at the Marienburger Sport Club. Lessons are in large groupes of children in the same age group. Please bring own equipment', price: '15', location: 'Heerweg 671, Bremen, Germany', availability: "2022-01-17", duration: '115', user_id: user1.id)
+activity1 = Activity.new(name: 'Boxing', description: 'Lessons are done in groupes of 2. Child has to be focused and well behaved(follow the rules). Equipment is not needed', price: '25', location: 'Goltsteinstr. 150, Cologne, Germany', availability:"2021-12-20", duration: '60')
+activity2 = Activity.new(name: 'Basketball', description: 'Basketball is a team sport and we will not only teach you child to play basketball but also to become more disciplined', price: '20', location: 'Rudower Straße 44, Berlin, Germany', availability:"2021-11-17", duration: '90')
+activity3 = Activity.new(name: 'Hockey', description: 'Play Hockey at the Marienburger Sport Club. Lessons are in large groupes of children in the same age group. Please bring own equipment', price: '15', location: 'Heerweg 671, Bremen, Germany', availability: "2022-01-17", duration: '115')
 
 kid4 = Kid.new(first_name: 'Anna', last_name: 'Miller', age: '12', gender: 'female')
 kid5 = Kid.new(first_name: 'Sophie', last_name: 'Gray', age: '11', gender: 'female')
@@ -44,9 +45,13 @@ kid7 = Kid.new(first_name: 'Charles', last_name: 'Koll', age: '7', gender: 'male
 
 puts 'Activities and Kids created'
 
-slot1 = Slot.create!(day: "Monday", time: '2021-12-08 15:30:00', activity_id: activity1.id)
-slot2 = Slot.create!(day: "Wednesday", time: '2021-12-14 17:30:00', activity_id: activity2.id)
-slot3 = Slot.create!(day: "Friday", time: '2021-12-16 16:00:00', activity_id: activity3.id)
+activity1.save
+activity2.save
+activity3.save
+
+slot1 = Slot.create!(day: "Monday", time: '2021-12-08 15:30:00')
+slot2 = Slot.create!(day: "Wednesday", time: '2021-12-14 17:30:00')
+slot3 = Slot.create!(day: "Friday", time: '2021-12-16 16:00:00')
 
 
 # file1 = URI.open('https://cdn.pixabay.com/photo/2013/07/13/12/35/boxing-gloves-159920_1280.png')
@@ -73,6 +78,10 @@ kid4.user = user4
 kid5.user = user5
 kid6.user = user6
 kid7.user = user6
+
+slot1.activity = activity1
+slot2.activity = activity2
+slot3.activity = activity3
 
 kid4.save
 kid5.save

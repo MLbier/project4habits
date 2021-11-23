@@ -11,18 +11,6 @@
      <p><strong>Availability: </strong><%= activity.availability %></p>
      <p><strong>Duration: </strong><%= activity.duration %></p>
      <p><strong>Price: </strong><%= activity.price %></p>
-     <div class="container">
-     <div class="row">
-     <% activity.slots.each do |slot| %>
-     <div class="col">
-     <div class="slot m-2 p-4">
-     <p><strong>Day: </strong><%= slot.day %></p>
-     <p><strong>Time: </strong><%= slot.time %></p>
-     <div class='btn btn-edit'><%= link_to 'Book a slot', kid_bookings_path(kid_id: @kid.id, slot_id: slot.id), method: :post %></div>
-     </div>
-     </div>
-     <% end %>
-     </div>
-     </div>
+     <div class='btn btn-edit'><%= link_to 'Show available slots', edit_listing_path(@listing) %></div>
      </div>
      <% end %>

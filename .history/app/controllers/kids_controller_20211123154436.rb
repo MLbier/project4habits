@@ -3,6 +3,7 @@ class KidsController < ApplicationController
     @kid = Kid.find(params[:id])
     @activities = Activity.all
     @slots = Slot.all
+    raise
   end
 
 

@@ -44,9 +44,9 @@ kid7 = Kid.new(first_name: 'Charles', last_name: 'Koll', age: '7', gender: 'male
 
 puts 'Activities and Kids created'
 
-slot1 = Slot.create!(day: "Monday", time: '2021-12-08 15:30:00', activity_id: activity1.id)
-slot2 = Slot.create!(day: "Wednesday", time: '2021-12-14 17:30:00', activity_id: activity2.id)
-slot3 = Slot.create!(day: "Friday", time: '2021-12-16 16:00:00', activity_id: activity3.id)
+slot1 = Slot.create!(day: "Monday", time: '2021-12-08 15:30:00', activity_id: activity1)
+slot2 = Slot.create!(day: "Wednesday", time: '2021-12-14 17:30:00', activity_id: activity2)
+slot3 = Slot.create!(day: "Friday", time: '2021-12-16 16:00:00', activity_id: activity3)
 
 
 # file1 = URI.open('https://cdn.pixabay.com/photo/2013/07/13/12/35/boxing-gloves-159920_1280.png')
