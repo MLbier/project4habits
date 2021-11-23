@@ -2,36 +2,21 @@
 @import "home";
 @import "layout";
 
-.activity {
-  border: 1px solid grey;
+.card {
+  align-items: center;
+  background: $medium-turquoise;
   border-radius: 30px;
-
-}
-// Import page-specific CSS files here.
-
-.page-container {
- min-height: 100vh; /* will cover the 100% of viewport */
- overflow: hidden;
- display: block;
- position: relative;
- padding-bottom: 150px; /* height of your footer */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: $purple;
 }
 
-.content-container {
-  margin-top: 0px;
+.btn-primary {
+  border-radius: 8px;
+  background-color: $purple;
+  border: 4px black
 }
 
-.cards {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr 1fr 1fr;
-  // grid-gap: 16px;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-.cards-home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.homepage-container {
+  background-color: $aquamarine;
 }
