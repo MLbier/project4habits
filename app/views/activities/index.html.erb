@@ -1,0 +1,11 @@
+<div class='header'>
+  <h1 class="ml-5">All Activities</h1>
+<%= form_tag activities_path, class: "form-search d-flex", method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a activity"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
+</div>
