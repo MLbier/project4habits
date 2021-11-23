@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :kids do
     resources :bookings, only: [:new, :create]
   end
-  get '/kids/:id/:activity_id/', to: 'patients#show'
+
 end

@@ -1,0 +1,8 @@
+ <p><strong>First name: </strong><%= @kid.first_name %></p>
+    <p><strong>Last name: </strong><%= @kid.last_name %></p>
+    <p><strong>Age: </strong><%= @kid.age %></p>
+    <p><strong>Gender: </strong><%= @kid.gender %></p>
+
+     <% @activities.each do |activity| %>
+     <p><strong>Activity: </strong><%= activity.name %></p>
+     <% end %>
