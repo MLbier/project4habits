@@ -44,11 +44,9 @@ kid7 = Kid.new(first_name: 'Charles', last_name: 'Koll', age: '7', gender: 'male
 
 puts 'Activities and Kids created'
 
-
 slot1 = Slot.new(day: "Monday", time: '07-12-2021 15:30')
 slot2 = Slot.new(day: "Wednesday", time: '09-12-2021 17:30')
-slot3 = Slot.new(day: "Friday", time: '11-12-2021 16:00')
-
+slot3
 
 # file1 = URI.open('https://cdn.pixabay.com/photo/2013/07/13/12/35/boxing-gloves-159920_1280.png')
 # file2 = URI.open('https://cdn.pixabay.com/photo/2014/04/02/14/12/basketball-306498_1280.png')
@@ -83,11 +81,5 @@ kid4.save
 kid5.save
 kid6.save
 kid7.save
-
-
-slot1.activity = activity1
-slot2.activity = activity2
-slot3.activity = activity3
-
 
 puts 'saved'
