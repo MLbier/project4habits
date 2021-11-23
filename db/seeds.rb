@@ -13,13 +13,11 @@
 # user5 = User.create!(email: "user5@gmail.com", password: "12345678", first_name: "Marc", last_name: "Gray", owner: false)
 # user6 = User.create!(email: "user6@gmail.com", password: "12345678", first_name: "Alice", last_name: "Koll", owner: false)
 
-
-
 require "open-uri"
+Booking.destroy_all
 Activity.destroy_all
-User.destroy_all
 Kid.destroy_all
-
+User.destroy_all
 
 puts 'everything destroyed'
 
@@ -48,7 +46,6 @@ puts 'Activities and Kids created'
 slot1 = Slot.new(day: "Monday", time: '07-12-2021 15:30')
 slot2 = Slot.new(day: "Wednesday", time: '09-12-2021 17:30')
 slot3 = Slot.new(day: "Friday", time: '11-12-2021 16:00')
-
 
 # file1 = URI.open('https://cdn.pixabay.com/photo/2013/07/13/12/35/boxing-gloves-159920_1280.png')
 # file2 = URI.open('https://cdn.pixabay.com/photo/2014/04/02/14/12/basketball-306498_1280.png')
@@ -84,10 +81,8 @@ kid5.save
 kid6.save
 kid7.save
 
-
 slot1.activity = activity1
 slot2.activity = activity2
 slot3.activity = activity3
-
 
 puts 'saved'
