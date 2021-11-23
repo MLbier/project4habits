@@ -1,0 +1,19 @@
+<div class='cards_kid'>
+  <% @kids.each do |kid|%>
+      <% if current_user == kid.user %>
+        <div class='card_kid'>
+          <%= link_to kid_path(kid) do %>
+            <% if kid.gender == 'female' %>
+              <img src="https://cdn-icons-png.flaticon.com/512/163/163811.png" alt="girl">
+            <% elsif %>
+              <img src="https://cdn-icons-png.flaticon.com/512/163/163807.png" alt="boy">
+            <% else %>
+              <img src="https://cdn-icons-png.flaticon.com/512/1499/1499179.png" alt="bear">
+            <% end %>
+            <h4><%= kid.first_name %> <%= kid.last_name %></h4>
+            <h4>Age: <%= kid.age %></h4>
+          <% end %>
+        </div>
+      <% end %>
+  <% end %>
+</div>
