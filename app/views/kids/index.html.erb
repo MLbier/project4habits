@@ -2,7 +2,7 @@
   <% @kids.each do |kid|%>
       <% if current_user == kid.user %>
         <div class='card_kid'>
-          <%= link_to kid_path(kid) do %>
+          <%= link_to kid_path(kid), class: "d-block" do %>
             <% if kid.gender == 'female' %>
               <img src="https://cdn-icons-png.flaticon.com/512/163/163811.png" alt="girl">
             <% elsif %>
@@ -16,4 +16,7 @@
         </div>
       <% end %>
   <% end %>
+</div>
+<div class='plus-icon'>
+  <img src="https://cdn-icons-png.flaticon.com/512/1828/1828764.png" alt="plus">
 </div>
