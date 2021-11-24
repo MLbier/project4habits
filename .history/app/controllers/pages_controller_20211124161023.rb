@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def home
   end
 
-  def book_activity
+  def dashboard
     @kid = Kid.find(params[:kid_id])
     @activities = Activity.all
   end

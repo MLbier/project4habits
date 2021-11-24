@@ -1,0 +1,13 @@
+<p><%= @kid.first_name %></p>
+
+
+<% @bookings.each do |booking| %>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= booking.slot.activity.name %></h5>
+    <p class="card-text"><%= booking.slot.day %></p>
+    <p class="card-text"><%= booking.slot.time %></p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<% end %>

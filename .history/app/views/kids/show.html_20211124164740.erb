@@ -1,0 +1,22 @@
+ <div class="kid">
+ <div class="kid-card mx-4 my-3">
+ <p>👶 <%= @kid.first_name %> <%= @kid.last_name %></p>
+    <p>🎂 <%= @kid.age %> years</p>
+    <% if @kid.gender == "male" %>
+    <p>♂</p>
+    <% else %>
+    <p>♀</p>
+    <% end %>
+
+<%= link_to "Book activities", dashboard_path(@kid),class: "btn btn-book" %>
+</div>
+<% @bookings.each do |booking| %>
+<div class="card booked-activity m-3" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= booking.slot.activity.name %></h5>
+    <p class="card-text"><%= booking.slot.day %></p>
+    <p class="card-text"><%= booking.slot.time %></p>
+  </div>
+</div>
+<% end %>
+</div>

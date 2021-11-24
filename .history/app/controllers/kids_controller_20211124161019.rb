@@ -4,11 +4,13 @@ class KidsController < ApplicationController
   end
 
   def new
-    @kid = Kid.new
+    @kid = Kids.new
   end
 
   def show
     @kid = Kid.find(params[:id])
+
+    @slots = Slot.all
     @bookings = Booking.where(kid_id: @kid.id)
   end
 
