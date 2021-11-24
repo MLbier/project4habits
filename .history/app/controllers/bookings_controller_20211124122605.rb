@@ -11,6 +11,6 @@ class BookingsController < ApplicationController
     @booking.slot = @slot
     @booking.kid = @kid
     @booking.save
-    redirect_to dashboard_path(kid_id: @kid.id)
+    redirect_to kidsbooking_path(@kid)
   end
 end
