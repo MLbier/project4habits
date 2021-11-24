@@ -13,11 +13,13 @@
 # user5 = User.create!(email: "user5@gmail.com", password: "12345678", first_name: "Marc", last_name: "Gray", owner: false)
 # user6 = User.create!(email: "user6@gmail.com", password: "12345678", first_name: "Alice", last_name: "Koll", owner: false)
 
+
+
 require "open-uri"
-Booking.destroy_all
 Activity.destroy_all
-Kid.destroy_all
 User.destroy_all
+Kid.destroy_all
+
 
 puts 'everything destroyed'
 
@@ -41,7 +43,6 @@ kid6 = Kid.new(first_name: 'Frederic', last_name: 'Koll', age: '9', gender: 'mal
 kid7 = Kid.new(first_name: 'Charles', last_name: 'Koll', age: '7', gender: 'male')
 
 puts 'Activities and Kids created'
-
 
 slot1 = Slot.new(day: "Monday", time: '07-12-2021 15:30')
 slot2 = Slot.new(day: "Wednesday", time: '09-12-2021 17:30')
