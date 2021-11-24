@@ -4,7 +4,7 @@ class KidsController < ApplicationController
   end
 
   def new
-    @kid = Kids.new
+    @kid = Kid.new
   end
 
   def show

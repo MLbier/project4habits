@@ -1,0 +1,12 @@
+<div class="row justify-content-center my-3">
+  <%= simple_form_for [ @kid ] do |f| %>
+    <%= f.input :first_name%>
+    <%= f.input :last_name%>
+    <%= f.input :gender, collection: ["female", "male", "neutral", "others"] %>
+    <%= f.input :age %>
+    <div class="row justify-content-center my-3">
+      <%= f.submit "Create",id: 'create_kid'%>
+      <%= link_to "Back", kids_path, id: "back_btn" %>
+    </div>
+  <% end %>
+</div>
