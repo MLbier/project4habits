@@ -13,12 +13,14 @@
 # user5 = User.create!(email: "user5@gmail.com", password: "12345678", first_name: "Marc", last_name: "Gray", owner: false)
 # user6 = User.create!(email: "user6@gmail.com", password: "12345678", first_name: "Alice", last_name: "Koll", owner: false)
 
+
+
 require "open-uri"
 Booking.destroy_all
-Slot.destroy_all
 Activity.destroy_all
 Kid.destroy_all
 User.destroy_all
+
 
 puts 'everything destroyed'
 
@@ -42,14 +44,10 @@ kid7 = Kid.new(first_name: 'Charles', last_name: 'Koll', age: '7', gender: 'male
 
 puts 'Activities and Kids created'
 
-slot1 = Slot.create!(day: "Monday", time: Time.strptime("12/08/2021 15:30", "%m/%d/%Y %H:%M"), activity_id: activity1.id)
-slot2 = Slot.create!(day: "Monday", time: Time.strptime("12/08/2021 15:30", "%m/%d/%Y %H:%M"), activity_id: activity2.id)
-slot3 = Slot.create!(day: "Wednesday", time: Time.strptime("12/11/2021 17:30", "%m/%d/%Y %H:%M"), activity_id: activity1.id)
-slot4 = Slot.create!(day: "Wednesday", time: Time.strptime("12/11/2021 17:30", "%m/%d/%Y %H:%M"), activity_id: activity2.id)
-slot5 = Slot.create!(day: "Wednesday", time: Time.strptime("12/11/2021 17:30", "%m/%d/%Y %H:%M"), activity_id: activity3.id)
-slot6 = Slot.create!(day: "Friday", time: Time.strptime("12/15/2021 15:30", "%m/%d/%Y %H:%M"), activity_id: activity2.id)
-slot7 = Slot.create!(day: "Friday", time: Time.strptime("12/15/2021 15:30", "%m/%d/%Y %H:%M"), activity_id: activity3.id)
-slot8 = Slot.create!(day: "Friday", time: Time.strptime("12/19/2021 18:30", "%m/%d/%Y %H:%M"), activity_id: activity3.id)
+slot1 = Slot.create!(day: "Monday", time: '2021-12-08 15:30:00', activity_id: activity1.id)
+slot2 = Slot.create!(day: "Wednesday", time: '2021-12-14 17:30:00', activity_id: activity2.id)
+slot3 = Slot.create!(day: "Friday", time: '2021-12-16 16:00:00', activity_id: activity3.id)
+
 
 # file1 = URI.open('https://cdn.pixabay.com/photo/2013/07/13/12/35/boxing-gloves-159920_1280.png')
 # file2 = URI.open('https://cdn.pixabay.com/photo/2014/04/02/14/12/basketball-306498_1280.png')

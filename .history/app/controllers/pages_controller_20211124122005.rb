@@ -4,8 +4,9 @@ class PagesController < ApplicationController
   def home
   end
 
-  def dashboard
-    @kid = Kid.find(params[:kid_id])
-    @bookings = Booking.where(kid_id: @kid.id)
+  def kids-bookings
+    @bookings = Booking.all
+    @kids = Kid.all
+    @kid_bookings = Booking.where(kid_id: @kid)
   end
 end

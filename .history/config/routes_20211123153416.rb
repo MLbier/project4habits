@@ -6,5 +6,4 @@ Rails.application.routes.draw do
   resources :kids do
     resources :bookings, only: [:new, :create]
   end
-  get "dashboard/:kid_id", to: 'pages#dashboard', as: :dashboard
 end
