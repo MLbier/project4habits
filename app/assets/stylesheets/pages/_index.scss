@@ -4,6 +4,8 @@
 @import "kids_index";
 
 .card {
+  flex-grow: 1;
+  justify-content: center;
   align-items: center;
   background: $medium-turquoise;
   border-radius: 30px;
