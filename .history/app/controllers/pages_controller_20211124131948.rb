@@ -6,6 +6,5 @@ class PagesController < ApplicationController
 
   def dashboard
     @kid = Kid.find(params[:kid_id])
-    @bookings = Booking.where(kid_id: @kid.id)
   end
 end
