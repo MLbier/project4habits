@@ -8,7 +8,7 @@
     <p>♀</p>
     <% end %>
 
-<%= link_to "Book activities", book_activity_path(@kid), class: "btn btn-book" %>
+<%= link_to "Book activities", dashboard_path(@kid) %>
 </div>
 <% @bookings.each do |booking| %>
 <div class="card booked-activity m-3" style="width: 18rem;">
