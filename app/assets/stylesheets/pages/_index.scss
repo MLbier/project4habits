@@ -2,29 +2,53 @@
 @import "home";
 @import "layout";
 @import "kids_index";
+@import "activities_show";
+
+.body {
+  background-color: $celeste;
+}
+.ml-5 {
+  display: center;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+}
 @import "kids_show";
 @import "book_activity";
 @import "kids_new";
 
 .card {
-  flex-grow: 1;
   justify-content: center;
   align-items: center;
-  background: $medium-turquoise;
+  flex-grow: 1;
+  background: #64E0DF;
+  width: 300px;
+  height: 300px;
   border-radius: 30px;
   margin-top: 30px;
-  margin-bottom: 30px;
-  box-shadow: $purple;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: $slate-blue;
 }
 
 .btn-primary {
-  border-radius: 8px;
-  background-color: $purple;
-  border: 4px black
+  border-radius: 32px;
+  background-color: $french-violet;
+  border: 12px black;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .homepage-container {
-  background-color: $aquamarine;
+  background-color: #BEF4ED;
 }
 
 .slot {
