@@ -1,0 +1,5 @@
+<p><%= @kid.first_name %></p>
+<% @bookings.each do |booking| %>
+<p><%= booking.slot.day %></p>
+<p><%= booking.slot.time %></p>
+<% end %>

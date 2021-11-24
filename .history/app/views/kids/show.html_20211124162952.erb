@@ -1,0 +1,17 @@
+ <div class="kid"><p><strong>First name: </strong><%= @kid.first_name %></p>
+    <p><strong>Last name: </strong><%= @kid.last_name %></p>
+    <p><strong>Age: </strong><%= @kid.age %></p>
+    <p><strong>Gender: </strong><%= @kid.gender %></p>
+
+<%= link_to "Book activities", dashboard_path(@kid) %>
+
+<% @bookings.each do |booking| %>
+<div class="card booked-activity m-3" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= booking.slot.activity.name %></h5>
+    <p class="card-text"><%= booking.slot.day %></p>
+    <p class="card-text"><%= booking.slot.time %></p>
+  </div>
+</div>
+<% end %>
+</div>

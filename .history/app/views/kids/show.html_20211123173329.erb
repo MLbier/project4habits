@@ -1,0 +1,26 @@
+ <p><strong>First name: </strong><%= @kid.first_name %></p>
+    <p><strong>Last name: </strong><%= @kid.last_name %></p>
+    <p><strong>Age: </strong><%= @kid.age %></p>
+    <p><strong>Gender: </strong><%= @kid.gender %></p>
+<h2>Choose your activity</h2>
+     <% @activities.each do |activity| %>
+     <div class="activity m-3 p-3">
+     <p><strong>Name: </strong><%= activity.name %></p>
+     <p><strong>Description: </strong><%= activity.description %></p>
+     <p><strong>Location: </strong><%= activity.location %></p>
+     <p><strong>Availability: </strong><%= activity.availability %></p>
+     <p><strong>Duration: </strong><%= activity.duration %></p>
+     <p><strong>Price: </strong><%= activity.price %></p>
+     <div class="container">
+     <div class="row">
+     <% activity.slots.each do |slot| %>
+     <div class="col">
+     <p><strong>Day: </strong><%= slot.day %></p>
+     <p><strong>Time: </strong><%= slot.time %></p>
+     <div class='btn btn-edit'><%= link_to 'Choose slot', new_kid_booking() %></div>
+     </div>
+     <% end %>
+     </div>
+     </div>
+     </div>
+     <% end %>
