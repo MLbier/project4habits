@@ -1,9 +1,29 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "layout";
 @import "kids_index";
 @import "kids_new";
 
-.activity {
-  border: 1px solid grey;
+.card {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background: $medium-turquoise;
   border-radius: 30px;
+<<<<<<< HEAD
+=======
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: $purple;
+}
+
+.btn-primary {
+  border-radius: 8px;
+  background-color: $purple;
+  border: 4px black
+}
+
+.homepage-container {
+  background-color: $aquamarine;
+>>>>>>> d7ca592cf0969f32d07e4ff1ff0e99f8d7225c5e
 }
