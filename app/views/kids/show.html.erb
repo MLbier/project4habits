@@ -19,6 +19,9 @@
 
 <% @bookings.each do |booking| %>
   <div class="booked_info_card">
+    <div>
+      <img src="https://cdn-icons.flaticon.com/png/512/3311/premium/3311579.png?token=exp=1637851780~hmac=f3917a4b649250fd66fdd7b5c06c150b" alt="sports">
+    </div>
     <div class="booked_card_text">
       <h5><%= booking.slot.activity.name %></h5>
       <h6><%= booking.slot.day %></h6>
