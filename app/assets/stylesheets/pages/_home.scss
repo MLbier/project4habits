@@ -1,24 +1,22 @@
 // Specific CSS for your home-page
 .btn-home {
-  padding: 8px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  background-color: #6930C3;
-  display: inline-block;
-  margin-right: 15px;
+  padding: 8px 24px;
   border-radius: 30px;
-  opacity: 0.8;
+  text-decoration: none;
+  background-color: #6930CD;
+  display: inline-block;
+  justify-content: center;
   color: rgb(250, 249, 249);
+  margin-top: 30px;
+
 }
 
 .btn-nav {
-  padding: 4px 9px;
-  border-radius: 8px;
-  text-decoration: none;
-  background-color: #6930C3;
-  display: inline-block;
+  padding: 8px 24px;
   border-radius: 30px;
-  opacity: 0.8;
+  text-decoration: none;
+  background-color: #6930CD;
+  display: inline-block;
   color: rgb(250, 249, 249);
 }
 
@@ -31,16 +29,23 @@
 }
 
 .content-container {
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom:20px;
 }
 
-footer-container {
- position: absolute;
- bottom: 0;
- width: 100%;
+.footer-links {
+  padding-top: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .fab {
   color:#48BFE3;
+}
+
+.img-fluid {
+  margin-left: 6px;
+  margin-right: auto;
+  justify-content: center;
 }
