@@ -1,11 +1,10 @@
-<div class='text-center m-2 t-2'>
-  <%= link_to "view profile", kid_path(@kid), id: "back_booking_btn" %>
-</div>
-
 <div class='title-booking'>
-  <h2>choose your activity for <%= @kid.first_name %></h2>
+  <h2>Choose an activity for <%= @kid.first_name %></h2>
 </div>
 
+<div class='text-center'>
+  <%= link_to "Back", kid_path(@kid), id: "back_booking_btn" %>
+</div>
 
 <% @activities.each do |activity| %>
     <div class="main-card-booking">
