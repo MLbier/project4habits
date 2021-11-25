@@ -1,0 +1,11 @@
+<header>
+<h1 class="my-3 text-center">Weekly</h1>
+<img src="<%= image_path("4habits1.png")  %>" class="img-fluid" alt="Responsive image">
+</header>
+
+
+<section>
+<%= raise link_to "Activities", activities_path(@kid), class: "btn btn-book" %>
+<%= link_to "Kids", book_activity_path(@kid), class: "btn btn-book" %>
+<%= link_to "Add a kid", book_activity_path(@kid), class: "btn btn-book" %>
+</section>
