@@ -42,14 +42,14 @@ kid7 = Kid.new(first_name: 'Charles', last_name: 'Koll', age: '7', gender: 'male
 
 puts 'Activities and Kids created'
 
-slot1 = Slot.create!(day: "Monday", time: "15:30", activity_id: activity1.id)
-slot2 = Slot.create!(day: "Monday", time: "15:30", activity_id: activity2.id)
-slot3 = Slot.create!(day: "Wednesday", time: "17:30", activity_id: activity1.id)
-slot4 = Slot.create!(day: "Wednesday", time: "17:30", activity_id: activity2.id)
-slot5 = Slot.create!(day: "Wednesday", time: "17:30", activity_id: activity3.id)
-slot6 = Slot.create!(day: "Friday", time: "15:30", activity_id: activity2.id)
-slot7 = Slot.create!(day: "Friday", time: "15:30", activity_id: activity3.id)
-slot8 = Slot.create!(day: "Friday", time: "18:30", activity_id: activity3.id)
+slot1 = Slot.create!(day: "Monday", time: "12/08/2021 15:30", activity_id: activity1.id)
+slot2 = Slot.create!(day: "Monday", time: "12/08/2021 15:30", activity_id: activity2.id)
+slot3 = Slot.create!(day: "Wednesday", time: "12/11/2021 17:30", activity_id: activity1.id)
+slot4 = Slot.create!(day: "Wednesday", time: "12/11/2021 17:30", activity_id: activity2.id)
+slot5 = Slot.create!(day: "Wednesday", time: "12/11/2021 17:30", activity_id: activity3.id)
+slot6 = Slot.create!(day: "Friday", time: "12/15/2021 15:30", activity_id: activity2.id)
+slot7 = Slot.create!(day: "Friday", time: "12/15/2021 15:30", activity_id: activity3.id)
+slot8 = Slot.create!(day: "Friday", time: "12/19/2021 18:30", activity_id: activity3.id)
 
 # file1 = URI.open('https://cdn.pixabay.com/photo/2013/07/13/12/35/boxing-gloves-159920_1280.png')
 # file2 = URI.open('https://cdn.pixabay.com/photo/2014/04/02/14/12/basketball-306498_1280.png')
