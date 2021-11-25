@@ -11,17 +11,6 @@
   color: rgb(250, 249, 249);
 }
 
-.btn-nav {
-  padding: 4px 9px;
-  border-radius: 8px;
-  text-decoration: none;
-  background-color: #6930C3;
-  display: inline-block;
-  border-radius: 30px;
-  opacity: 0.8;
-  color: rgb(250, 249, 249);
-}
-
 .page-container {
  min-height: 100vh; /* will cover the 100% of viewport */
  overflow: hidden;
@@ -32,15 +21,10 @@
 
 .content-container {
   margin-top: 0px;
-  margin-bottom:20px;
 }
 
-footer-container {
+footer {
  position: absolute;
  bottom: 0;
  width: 100%;
-}
-
-.fab {
-  color:#48BFE3;
 }

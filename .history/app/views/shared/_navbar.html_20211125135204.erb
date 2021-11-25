@@ -46,8 +46,10 @@
           <%= link_to "Add a kid", "/kids/new", class: "btn btn-nav" %>
         </li>
         <li class="nav-item dropdown">
-          <%= image_tag "https://res.cloudinary.com/dgarvanzw/image/upload/v1637142348/Sample_User_Icon_r2zlx0.png", class: "avatar dropdown-toggle ml--3", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %> Account
+          <%= image_tag "https://res.cloudinary.com/dgarvanzw/image/upload/v1637142348/Sample_User_Icon_r2zlx0.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %> Account
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <%= link_to "Activites", "/activities", class: "dropdown-item" %>
+            <%= link_to "Kids", "/kids", class: "dropdown-item" %>
             <%# <%= link_to "Another action", "#", class: "dropdown-item" %>
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
           </div>

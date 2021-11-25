@@ -1,0 +1,17 @@
+.page-container {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 10px; /* height of your footer */
+}
+
+.content-container {
+  margin-top: 0px;
+}
+
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+}
