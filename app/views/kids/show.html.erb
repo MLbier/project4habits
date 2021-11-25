@@ -8,7 +8,7 @@
   <% end %>
   <h2><%= @kid.first_name%> <%= @kid.last_name %></h2>
   <div class='age_show'>
-    <h2><%= @kid.age %> <img src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985632.png?token=exp=1637767843~hmac=1c7529f63fae9115007d5e21bd1524b1" alt="cake"></h2>
+    <h2><%= @kid.age %> <img src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985579.png?token=exp=1637853768~hmac=3ef5e5236391e50d8a158256943b03e4" alt="cake"></h2>
   </div>
 </div>
 
@@ -19,6 +19,9 @@
 
 <% @bookings.each do |booking| %>
   <div class="booked_info_card">
+    <div>
+      <img src="https://cdn-icons.flaticon.com/png/512/3311/premium/3311579.png?token=exp=1637851780~hmac=f3917a4b649250fd66fdd7b5c06c150b" alt="sports">
+    </div>
     <div class="booked_card_text">
       <h5><%= booking.slot.activity.name %></h5>
       <h6><%= booking.slot.day %></h6>

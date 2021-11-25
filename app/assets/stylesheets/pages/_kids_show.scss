@@ -64,6 +64,7 @@
 }
 
 .booked_info_card {
+  display: flex;
   background: #64E0DF;
   width: 300px;
   padding-top: 10px;
@@ -76,4 +77,10 @@
   margin-right: auto;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.booked_info_card img {
+  margin-left: 30px;
+  width: 80px;
+  height: 80px;
 }
