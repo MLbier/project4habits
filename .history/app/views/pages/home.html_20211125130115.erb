@@ -1,4 +1,4 @@
-<header class="mb-3">
+<header>
 <h1 class="my-3 text-center">Weekly</h1>
 <img src="<%= image_path("4habits1.png")  %>" class="img-fluid" alt="Responsive image">
 </header>
@@ -12,6 +12,9 @@
 </div>
 <div class="col-12 m-2">
 <%= link_to "Kids", kids_path, class: "btn btn-home" %>
+</div>
+<div class="col-12 m-2">
+<%= link_to "Add a kid", new_kid_path, class: "btn btn-home" %>
 </div>
 </div>
 </div>
