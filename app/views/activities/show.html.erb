@@ -9,7 +9,7 @@
     <p><strong>Location: </strong><%= @activity.location %></p>
     <p><strong>Price: </strong><%= @activity.price %>€</p>
     <p><strong>Availability: </strong><%= @activity.availability %></p>
-    <%= link_to "make a booking","#", class: "btn-book btn" %>
+    <div> <%= link_to "make a booking","#", class: "btn-book btn" %></div>
     <div> <%= link_to "back to all activities ", activities_path, class: 'btn-show' %>
     </div>
 

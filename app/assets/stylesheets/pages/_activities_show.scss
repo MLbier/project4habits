@@ -1,5 +1,6 @@
 
 .show-container {
+  display: flex;
   justify-content: center;
   align-items: center;
   background: #64E0DF;
@@ -21,13 +22,14 @@
   background-color: $purple;
   border: 12px black;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  //margin-left: auto;
+  margin-right: 0px !important;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: white;
-  padding: 20px
+  padding: 20px;
+  //display: inline-block;
 
 }
 
@@ -43,7 +45,7 @@
   margin-top: 10px;
   margin-bottom: 20px;
   padding: 20px;
-
+  display: inline-block;
 }
 
 

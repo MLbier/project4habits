@@ -7,13 +7,20 @@
 .body {
   background-color: $celeste;
 }
-.ml-5 {
-  display: center;
-  margin-right: auto;
-  margin-left: auto;
+
+.header {
+  text-align: center;
+
+}
+
+.header h1 {
+
   justify-content: center;
   align-items: center;
+  color: $vivid-sky-blue;
 }
+
+
 @import "kids_show";
 @import "book_activity";
 @import "kids_new";
