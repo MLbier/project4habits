@@ -1,10 +1,11 @@
-<div class='title-booking'>
-  <h2>Choose an activity for <%= @kid.first_name %></h2>
+<div class='text-center m-2 t-2'>
+  <%= link_to "view profile", kid_path(@kid), id: "back_booking_btn" %>
 </div>
 
-<div class='text-center'>
-  <%= link_to "Back", kid_path(@kid), id: "back_booking_btn" %>
+<div class='title-booking'>
+  <h2>choose your activity for <%= @kid.first_name %></h2>
 </div>
+
 
 <% @activities.each do |activity| %>
     <div class="main-card-booking">
@@ -17,7 +18,7 @@
         <div class='slot-card-booking'>
           <h6><strong><%= slot.day %></strong></h6>
           <h6><%= slot.time.strftime("%d %B, %R ") %></h6>
-          <div class='btn btn-edit'><%= link_to 'Book a slot', kid_bookings_path(kid_id: @kid.id, slot_id: slot.id), method: :post, data: {confirm: "Are you sure you want to book this slot?"}, class: "btn btn-book" %></div>
+          <div class='btn btn-edit'><%= link_to 'book a slot', kid_bookings_path(kid_id: @kid.id, slot_id: slot.id), method: :post, data: {confirm: "Are you sure you want to book this slot?"}, class: "btn btn-book" %></div>
         </div>
       <% end %>
     </div>
