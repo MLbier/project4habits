@@ -1,6 +1,11 @@
 <div class='title-booking'>
   <h2>Choose an activity for <%= @kid.first_name %></h2>
 </div>
+
+<div class='text-center'>
+  <%= link_to "Back", kid_path(@kid), id: "back_booking_btn" %>
+</div>
+
 <% @activities.each do |activity| %>
     <div class="main-card-booking">
       <h4><%= activity.name %></h4>

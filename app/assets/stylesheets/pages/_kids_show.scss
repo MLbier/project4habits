@@ -11,7 +11,17 @@
   background-color: #6930C3;
   display: inline-block;
   border-radius: 30px;
-  opacity: 0.8;
+  color: rgb(250, 249, 249);
+}
+
+#back_show_btn {
+  margin-left: 30px;
+  padding: 8px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: #6930C3;
+  display: inline-block;
+  border-radius: 30px;
   color: rgb(250, 249, 249);
 }
 
@@ -54,11 +64,10 @@
 }
 
 .booked_info_card {
-  justify-content: center;
-  align-items: center;
   background: #64E0DF;
   width: 300px;
-  height: 120px;
+  padding-top: 10px;
+  height: 100px;
   border-radius: 30px;
   margin-top: 50px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

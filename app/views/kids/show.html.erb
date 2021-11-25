@@ -14,6 +14,7 @@
 
 <div class='row justify-content-center my-4'>
   <%= link_to "Book activities", book_activity_path(@kid), class: "booking-btn" %>
+  <%= link_to "Back", kids_path, id: "back_show_btn" %>
 </div>
 
 <% @bookings.each do |booking| %>
@@ -21,7 +22,7 @@
     <div class="booked_card_text">
       <h5><%= booking.slot.activity.name %></h5>
       <h6><%= booking.slot.day %></h6>
-      <h6><%= booking.slot.time %></h6>
+      <h6><%= booking.slot.time.strftime("%d %B, %R ") %></h6>
     </div>
   </div>
 <% end %>
