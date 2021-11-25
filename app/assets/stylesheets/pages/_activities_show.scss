@@ -18,9 +18,8 @@
 }
 
 .btn-book {
-  border-radius: 32px;
-  background-color: $purple;
-  border: 12px black;
+  border-radius: 8px;
+  background-color: #6930CD;
   align-items: center;
   //margin-left: auto;
   margin-right: 0px !important;
@@ -28,23 +27,22 @@
   margin-top: 20px;
   margin-bottom: 20px;
   color: white;
-  padding: 20px;
+  padding: 8px 24px;
   //display: inline-block;
 
 }
 
 .btn-show {
   color:$sky-blue-crayola;
-  border-radius: 32px;
+  border-radius: 8px;
   background-color: $celeste;
-  border: 12px black;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 8px 24px;
   display: inline-block;
 }
 
