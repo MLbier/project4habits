@@ -4,15 +4,24 @@
   background-color: #48BFE3;
 }
 
-.btn-book {
+.booking-btn {
   padding: 8px 18px;
   border-radius: 8px;
   text-decoration: none;
   background-color: #6930C3;
   display: inline-block;
-  margin-right: 15px;
   border-radius: 30px;
-  opacity: 0.8;
+  color: rgb(250, 249, 249);
+}
+
+#back_show_btn {
+  margin-left: 30px;
+  padding: 8px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: #6930C3;
+  display: inline-block;
+  border-radius: 30px;
   color: rgb(250, 249, 249);
 }
 
@@ -38,10 +47,33 @@
   margin-bottom: 10px;
 }
 
-.age img {
+.age_show img {
   width: 50px;
   height: 50px;
   margin-top: 0px;
   margin-bottom: 22px;
 
+}
+
+.book-activity-show {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.booked_info_card {
+  background: #64E0DF;
+  width: 300px;
+  padding-top: 10px;
+  height: 100px;
+  border-radius: 30px;
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 20px;
 }
