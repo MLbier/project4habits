@@ -36,11 +36,11 @@ class ActivitiesController < ApplicationController
   end
 
   def edit
-    @activity = Activity.find(activity_params[:id])
+    @activity = Activity.find(params[:id])
   end
 
   def update
-    @activity = Activity.find(activity_params[:id])
+    @activity = Activity.find(params[:id])
     if @activity.update(activity_params)
       redirect_to @activity, notice: 'Activity was successfully updated.'
     else
@@ -49,9 +49,9 @@ class ActivitiesController < ApplicationController
   end
 
   def destroy
-    @activity = Activity.find(params[:id])
+    @activity = Activity.find(params[:activity_id])
     @activity.destroy!
-    redirect_to activities_path
+    redirect_to activitys_path
   end
 
   private
