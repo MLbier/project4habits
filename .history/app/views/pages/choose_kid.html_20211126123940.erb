@@ -1,0 +1,5 @@
+<p><%= @activity.name %></p>
+<% @kids.each do |kid|  %>
+<p><%= kid.first_name %></p>
+<div> <%= link_to "make a booking", book_activity_path(kid_id: kid.id), class: "btn-book btn" %></div>
+<% end %>

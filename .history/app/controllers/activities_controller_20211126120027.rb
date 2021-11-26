@@ -21,8 +21,7 @@ class ActivitiesController < ApplicationController
 
   def show
     @activity = Activity.find(params[:id])
-    @user = current_user
-    @kids = Kid.where(["user_id = '%s'", @user.id])
+    @kids = Kid.all
   end
 
   def create

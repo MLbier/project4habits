@@ -12,6 +12,7 @@
     <% if @kids == "nil" %>
     <div>To book an activity, you need to add a kid profile first</div>
     <% else %>
+    <div> <%= link_to "choose a kid to book", choose_kid_path(activity_id: @activity.id), class: "btn-book btn" %></div>
 
     <div class="dropdown">
   <button class="btn btn-book dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -19,8 +20,10 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
   <% @kids.each do |kid| %>
-  <%= link_to kid.first_name, book_slot_path(activity_id: @activity.id, kid_id: kid.id), class: "dropdown-item" %>
+  <%= link_to kid.first_name, choose_kid_path(activity_id: @activity.id), class: "dropdown-item" %>
   <% end %>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
   </div>
 </div>
     <% end %>
