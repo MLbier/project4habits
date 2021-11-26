@@ -49,7 +49,7 @@ class ActivitiesController < ApplicationController
   end
 
   def destroy
-    @activity = Activity.find(params[:id])
+    @activity = Activity.find(activity_params[:id])
     @activity.destroy!
     redirect_to activities_path
   end
