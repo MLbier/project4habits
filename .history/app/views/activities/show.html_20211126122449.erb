@@ -12,17 +12,7 @@
     <% if @kids == "nil" %>
     <div>To book an activity, you need to add a kid profile first</div>
     <% else %>
-
-    <div class="dropdown">
-  <button class="btn btn-book dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    choose a kid to book
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-  <% @kids.each do |kid| %>
-  <%= link_to kid.first_name, book_slot_path(activity_id: @activity.id, kid_id: kid.id), class: "dropdown-item" %>
-  <% end %>
-  </div>
-</div>
+    <div> <%= link_to "choose a kid", book_activity_path(kid_id: 49), class: "btn-book btn" %></div>
     <% end %>
     <div> <%= link_to "back to all activities ", activities_path, class: 'btn-show' %>
     </div>

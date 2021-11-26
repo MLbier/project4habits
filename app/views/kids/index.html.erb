@@ -1,8 +1,8 @@
-<div class='text-center mt-3'>
+<div class='text-center mt-5'>
   <%= link_to "back to homepage", root_path, id: "back_home_btn" %>
 </div>
 
-<div class='cards_kid'>
+<div class='cards_kid my-5'>
   <% @kids.each do |kid|%>
       <% if current_user == kid.user %>
         <div class='card_kid'>

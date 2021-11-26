@@ -7,5 +7,5 @@ Rails.application.routes.draw do
     resources :bookings, only: [:new, :create]
   end
   get "book_activity/:kid_id", to: 'pages#book_activity', as: :book_activity
-  get "book_slot/:activity_id/:kid_id", to: 'pages#book_slot', as: :book_slot
+  get "choose_kid/:activity_id/:kid_id", to: 'pages#choose_kid', as: :choose_kid
 end

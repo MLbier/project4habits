@@ -19,8 +19,10 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
   <% @kids.each do |kid| %>
-  <%= link_to kid.first_name, book_slot_path(activity_id: @activity.id, kid_id: kid.id), class: "dropdown-item" %>
+  <%= link_to kid.first_name, choose_kid_path(activity_id: @activity.id, kid_id: kid.id), class: "dropdown-item" %>
   <% end %>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
   </div>
 </div>
     <% end %>
