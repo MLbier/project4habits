@@ -11,9 +11,13 @@
   border-radius: 30px;
   padding: 8px 24px;
   color: white;
-  margin-left: 35px;
+  margin-left: 10px
 }
 
-.back_btn :hover {
+#back_btn :hover {
+  text-decoration: none;
+}
+
+#create_kid :hover {
   text-decoration: none;
 }

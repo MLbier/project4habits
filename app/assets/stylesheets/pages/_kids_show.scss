@@ -5,21 +5,17 @@
 }
 
 .booking-btn {
-  padding: 8px 24px;
+  padding: 8px 18px;
   text-decoration: none;
   background-color: #6930CD;
   display: inline-block;
   border-radius: 30px;
   color: rgb(250, 249, 249);
+  margin-left: 5px;
 }
 
-#back_show_btn {
-  margin-left: 30px;
-  padding: 8px 24px;
+.booking-btn :hover {
   text-decoration: none;
-  background-color: #6930CD;
-  display: inline-block;
-  border-radius: 30px;
   color: rgb(250, 249, 249);
 }
 
@@ -32,7 +28,6 @@
   border-radius: 30px;
   margin-top: 50px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -42,7 +37,7 @@
   margin-top: 20px;
   width: 150px;
   height: 150px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .age_show img {
@@ -68,7 +63,7 @@
   padding-top: 10px;
   height: 100px;
   border-radius: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding-bottom: 10px;
   margin-left: auto;
