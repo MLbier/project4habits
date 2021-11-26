@@ -1,17 +1,16 @@
 .btn-book {
-  padding: 8px 18px;
-  border-radius: 8px;
+  padding: 8px 24px;
   text-decoration: none;
-  background-color: #6930C3;
+  background-color: #6930CD;
   display: inline-block;
   border-radius: 30px;
-  opacity: 0.8;
   color: rgb(250, 249, 249);
   margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 #back_booking_btn {
-  background-color: $turquoise;
+  background-color: $slate-blue;
   border-radius: 30px;
   padding: 8px 24px;
   color: white;
@@ -20,8 +19,9 @@
 
 
 .title-booking {
-  margin-top: 10px;
+  margin-top: 30px;
   text-align: center;
+  color: $slate-blue;;
 }
 
 .activity-image {
@@ -45,7 +45,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  color: rgb(15, 15, 15);
+  color: $slate-blue;
   margin-bottom: 50px;
 }
 
