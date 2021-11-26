@@ -22,6 +22,19 @@ class KidsController < ApplicationController
     end
   end
 
+  def edit
+    @kid = Kid.find(params[:id])
+  end
+
+  def update
+    @kid = Kid.find(params[:id])
+    if @kid.update(kid_params)
+      redirect_to @kid, notice: 'kid profile successfully edited'
+    else
+      render :edit
+    end
+  end
+
   def destroy
     @kid = Kid.find(params[:id])
     @kid.destroy!

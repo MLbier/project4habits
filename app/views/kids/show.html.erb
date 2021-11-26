@@ -13,8 +13,9 @@
 </div>
 
 <div class='row justify-content-center my-4'>
-  <%= link_to "Book activities", book_activity_path(@kid), class: "booking-btn" %>
-  <%= link_to "Back", kids_path, id: "back_show_btn" %>
+  <%= link_to "Book activity", book_activity_path(@kid), class: "booking-btn" %>
+  <%= link_to 'Edit', edit_kid_path(@kid), class: "booking-btn" %>
+  <%= link_to "Back", kids_path, class: "booking-btn" %>
 </div>
 
 <% @bookings.each do |booking| %>

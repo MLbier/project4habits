@@ -13,4 +13,5 @@ class BookingsController < ApplicationController
     @booking.save
     redirect_to kid_path(@kid)
   end
+
 end
