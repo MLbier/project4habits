@@ -1,0 +1,50 @@
+<div class="container my-4 text-center">
+<div class="row">
+
+<div class="col">
+<h2>My Activities</h2>
+
+<% if @user_activities.count > 0 %>
+    <% @user_activities.each do |activity| %>
+
+<div class='show-container'>
+    <%#=cl_image_tag @activity.photo.key%>
+
+  <div class='info-text mx-4'>
+
+    <h1><strong><%= activity.name %></strong></h1>
+    <p><strong>Location: </strong><%= activity.location %></p>
+    <p><strong>Price: </strong><%= activity.price %>€</p>
+    <p><strong>Booked: </strong></p>
+    <% activity.slots.each do |slot| %>
+          <% slot.bookings.each do |booking| %>
+            <span><%= booking.kid.first_name %> <%= booking.kid.last_name %></span>
+            <span><%= slot.time %></span>
+          <% end %>
+        <% end %>
+      <br>
+      <div class="edit-delete mt-4">
+      <div class='btn btn-edit mr-sm-4'><%= link_to 'Edit', edit_activity_path(activity) %></div>
+      <div class='btn btn-destroy mr-sm-4'><%= link_to "Delete activity", activity_path(activity), method: :delete, data: {confirm: "Are you sure?"}  %></div>
+      </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+<% end %>
+    <% else %>
+    <p>You don't have any activities yet...</p>
+    <% end %>
+
+
+</div>
+
+
+
+</div>
+</div>

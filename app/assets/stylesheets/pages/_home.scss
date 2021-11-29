@@ -1,5 +1,10 @@
 // Specific CSS for your home-page
-a:hover {text-decoration: none;}
+a:hover {
+  text-decoration: none;
+  color: rgb(250, 249, 249);
+}
+
+
 .btn-home {
   padding: 8px 24px;
   border-radius: 30px;
@@ -9,7 +14,6 @@ a:hover {text-decoration: none;}
   justify-content: center;
   color:white;
   margin-top: 30px;
-
 }
 
 .btn-logout {

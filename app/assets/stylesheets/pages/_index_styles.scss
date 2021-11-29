@@ -1,0 +1,62 @@
+.body {
+  background-color: $celeste;
+}
+
+.header {
+  text-align: center;
+
+}
+
+.header h1 {
+
+  justify-content: center;
+  align-items: center;
+  color: $vivid-sky-blue;
+}
+
+
+@import "kids_show";
+@import "book_activity";
+@import "kids_new";
+
+.card {
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background: #64E0DF;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: $slate-blue;
+}
+
+.btn-primary {
+  border-radius: 30px;
+  background-color: #6930CD;
+  border: 12px black;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 8px 24px;
+}
+
+.homepage-container {
+  background-color: #BEF4ED;
+}
+
+.slot {
+  border: 1px solid grey;
+  border-radius: 30px;
+}
+
+.form-group input {
+  border-radius: 30px;
+}

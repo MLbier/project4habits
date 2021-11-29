@@ -1,0 +1,48 @@
+<div class="container my-4 text-center">
+<div class="row">
+
+<div class="col">
+<h2>My Activities</h2>
+
+<table>
+  <thead>
+    <tr>
+    <th>Activity name</th>
+    <th class="pl-2">Location</th>
+    <th>Bookings</th>
+
+    </tr>
+  </thead>
+
+  <tbody>
+  <% if @user_activities.count > 0 %>
+    <% @user_activities.each do |activity| %>
+      <div>
+      <tr>
+        <td><%= activity.name %></td>
+        <td><%= activity.location %></td>
+        <% activity.slots.each do |slot| %>
+          <% slot.bookings.each do |booking| %>
+            <td><%= booking.kid.user.email %></td>
+          <% end %>
+        <% end %>
+      </tr>
+      </div>
+
+
+    <% end %>
+    <% else %>
+    <p>You don't have any activities yet...</p>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+
+</div>
+
+
+
+</div>
+</div>
