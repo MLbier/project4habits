@@ -4,6 +4,11 @@
   background-color: #48BFE3;
 }
 
+.booking-btn a:hover {
+  text-decoration: none;
+  color: rgb(250, 249, 249);
+}
+
 .booking-btn {
   padding: 8px 18px;
   text-decoration: none;
@@ -12,11 +17,6 @@
   border-radius: 30px;
   color: rgb(250, 249, 249);
   margin-left: 5px;
-}
-
-.booking-btn :hover {
-  text-decoration: none;
-  color: rgb(250, 249, 249);
 }
 
 .show_info_cards {
