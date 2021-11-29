@@ -1,0 +1,68 @@
+<div class="container my-4">
+<div class="row">
+<div class="col">
+<h2>My booking requests</h2>
+<table>
+  <thead>
+    <tr>
+    <th>Who booked</th>
+    <th>Date</th>
+    <th>Status</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% if @bookings_requests %>
+    <% @bookings_requests.each do |booking| %>
+      <tr>
+        <td><%= booking.kid.name %></td>
+        <td><%= booking.slot.day %></td>
+        <td><%= booking.slot.time %></td>
+
+
+      </tr>
+    <% end %>
+    <% else %>
+    <p>You don't have any booking requests yet</p>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<div class="col">
+<h2>My bookings</h2>
+
+<table>
+  <thead>
+    <tr>
+    <th>Booked chef</th>
+    <th>Who booked</th>
+    <th>Date</th>
+    <th>Status</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% if @user_bookings %>
+    <% @user_bookings.each do |ubooking| %>
+      <div><tr>
+        <td><%= ubooking.listing.name %></td>
+        <td><%= ubooking.user.first_name %></td>
+        <td><%= ubooking.date_booking %></td>
+        <td><%= ubooking.status %></td>
+      </tr>
+      </div>
+
+
+    <% end %>
+    <% else %>
+    <p>You don't have any bookings yet</p>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+
+</div>
+</div>
+</div>
