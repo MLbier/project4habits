@@ -4,3 +4,65 @@
 @import "kids_index";
 @import "activities_show";
 @import "index_styles";
+
+.body {
+  background-color: $celeste;
+}
+
+.header {
+  text-align: center;
+  color: black;
+
+}
+
+.header h1 {
+
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+
+@import "kids_show";
+@import "book_activity";
+@import "kids_new";
+
+.card {
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  border: 1px solid black;
+  background: white;
+  width: 300px;
+  height: 320px;
+  border-radius: 0px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-shadow: black;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: black;
+}
+
+.btn-primary {
+  border-radius: 30px;
+  background-color: #6930CD;
+  border: 12px black;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 8px 24px;
+}
+
+.homepage-container {
+  background-color: #BEF4ED;
+}
+
+.slot {
+  border: 1px solid grey;
+  border-radius: 30px;
+}

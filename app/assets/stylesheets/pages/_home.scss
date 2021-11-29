@@ -9,10 +9,10 @@ a:hover {
   padding: 8px 24px;
   border-radius: 30px;
   text-decoration: none;
-  background-color: #6930CD;
+  background-color: black;
   display: inline-block;
   justify-content: center;
-  color: rgb(250, 249, 249);
+  color:white;
   margin-top: 30px;
 }
 
@@ -20,8 +20,8 @@ a:hover {
   padding: 6px 18px;
   border-radius: 30px;
   text-decoration: none;
-  background-color: #359ac9;
-  display: inline-block;
+  background-color:  black;
+  display: block;
   color: rgb(250, 249, 249);
 }
 
@@ -29,8 +29,8 @@ a:hover {
   padding: 6px 18px;
   border-radius: 30px;
   text-decoration: none;
-  background-color: #6930CD;
-  display: inline-block;
+  background-color: $charcoal;
+  display: block;
   color: rgb(250, 249, 249);
 }
 
@@ -47,16 +47,6 @@ a:hover {
   margin-bottom:20px;
 }
 
-.footer-links {
-  padding-top: 30px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.fab {
-  color: $charcoal;
-}
 
 .img-fluid {
   margin-left: 6px;
