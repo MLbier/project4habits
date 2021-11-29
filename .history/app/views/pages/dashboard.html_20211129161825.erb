@@ -16,14 +16,14 @@
     <p><strong>Location: </strong><%= activity.location %></p>
     <p><strong>Price: </strong><%= activity.price %>€</p>
 
-    <% if activity.slots.present?  %>
+    <% if activity.slots.bookings.present?  %>
     <p><strong>Booked: </strong></p>
-      <% activity.slots.each do |slot| %>
-            <% slot.bookings.each do |booking| %>
-              <span><%= booking.kid.first_name %> <%= booking.kid.last_name %></span>
-              <span><%= slot.time %></span>
-            <% end %>
-      <% end %>
+    <% activity.slots.each do |slot| %>
+          <% slot.bookings.each do |booking| %>
+            <span><%= booking.kid.first_name %> <%= booking.kid.last_name %></span>
+            <span><%= slot.time %></span>
+          <% end %>
+    <% end %>
     <% end %>
       <br>
       <div class="edit-delete mt-4">

@@ -16,20 +16,8 @@
     <p><strong>Location: </strong><%= activity.location %></p>
     <p><strong>Price: </strong><%= activity.price %>€</p>
 
-    <% if activity.slots.present?  %>
-    <p><strong>Booked: </strong></p>
-      <% activity.slots.each do |slot| %>
-            <% slot.bookings.each do |booking| %>
-              <span><%= booking.kid.first_name %> <%= booking.kid.last_name %></span>
-              <span><%= slot.time %></span>
-            <% end %>
-      <% end %>
-    <% end %>
-      <br>
-      <div class="edit-delete mt-4">
       <div class='btn btn-edit mr-sm-4'><%= link_to 'Edit', edit_activity_path(activity) %></div>
       <div class='btn btn-destroy mr-sm-4'><%= link_to "Delete activity", activity_path(activity), method: :delete, data: {confirm: "Are you sure?"}  %></div>
-      </div>
 
 
   </div>
@@ -37,12 +25,39 @@
 
 
 
+<table>
+  <thead>
+    <tr>
+    <th>Activity name</th>
+    <th class="pl-2">Location</th>
+    <th>Bookings</th>
+
+    </tr>
+  </thead>
+
+  <tbody>
+
+      <div>
+      <tr>
+        <td><%= activity.name %></td>
+        <td><%= activity.location %></td>
+        <% activity.slots.each do |slot| %>
+          <% slot.bookings.each do |booking| %>
+            <td><%= booking.kid.user.email %></td>
+          <% end %>
+        <% end %>
+      </tr>
+      </div>
 
 
-<% end %>
+    <% end %>
     <% else %>
     <p>You don't have any activities yet...</p>
     <% end %>
+  </tbody>
+</table>
+
+
 
 
 </div>

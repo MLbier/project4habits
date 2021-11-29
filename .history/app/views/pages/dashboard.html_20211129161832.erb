@@ -16,7 +16,7 @@
     <p><strong>Location: </strong><%= activity.location %></p>
     <p><strong>Price: </strong><%= activity.price %>€</p>
 
-    <% if activity.slots.present?  %>
+    <% if activity.slots.bookings.present?  %>
     <p><strong>Booked: </strong></p>
       <% activity.slots.each do |slot| %>
             <% slot.bookings.each do |booking| %>
