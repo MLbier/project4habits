@@ -5,8 +5,8 @@
     <%= f.input :gender, collection: ["female", "male", "neutral", "others"] %>
     <%= f.input :age %>
     <div class="row justify-content-center my-3">
-      <%= f.submit "Save",id: 'create_kid'%>
-      <%= link_to "Back", kid_path(@kid), id: "back_btn" %>
+      <%= f.submit "save",id: 'create_kid'%>
+      <%= link_to "back", kid_path(@kid), id: "back_btn" %>
     </div>
     <div class='row justify-content-center my-3'><%= link_to "Remove Child", kid_path(@kid), method: :delete, data: {confirm: "Are you sure that you want to remove this child?"}, id: "create_kid"  %></div>
   <% end %>
