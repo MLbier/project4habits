@@ -23,7 +23,7 @@ class PagesController < ApplicationController
     @owner = current_user.activities.any?
     if @owner
     @my_activities = current_user.activities
-    #@bookings_requests = @bookings.where(slot_id: current_user.activities.slot.id)
+    @bookings_requests = @activities.where(user_id: current_user.id)
     end
   end
 
