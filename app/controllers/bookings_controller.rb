@@ -14,4 +14,9 @@ class BookingsController < ApplicationController
     redirect_to kid_path(@kid)
   end
 
+  def destroy
+    @booking = Booking.find(params[:id])
+    @booking.destroy!
+    redirect_to kid_path(@booking.kid)
+  end
 end

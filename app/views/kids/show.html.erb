@@ -24,10 +24,13 @@
     <div>
       <%= image_tag "sport.png" %></h2>
     </div>
-    <div class="booked_card_text">
+    <div class="booked_card_text ml-2">
       <h5><%= booking.slot.activity.name %></h5>
       <h6><%= booking.slot.day %></h6>
       <h6><%= booking.slot.time %></h6>
+    </div>
+    <div class='my-auto ml-1'>
+      <div class="cancel-booking-btn"><%= link_to "Cancel", booking_path(booking), method: :delete,data: {confirm: "Are you sure that you want to cancel your booking for the activity?"}%></div>
     </div>
   </div>
 <% end %>
