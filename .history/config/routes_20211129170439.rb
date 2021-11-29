@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   get "book_activity/:kid_id", to: 'pages#book_activity', as: :book_activity
   get "book_slot/:activity_id/:kid_id", to: 'pages#book_slot', as: :book_slot
   get "dashboard", to: 'pages#dashboard', as: :dashboard
-  get "slot_bookings/:slot_id", to: 'pages#slot_bookings', as: :slot_bookings
+  get "slot_bookings", to: 'pages#slot_bookings', as: :slot_bookings
 end

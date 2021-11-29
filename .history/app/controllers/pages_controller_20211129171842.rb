@@ -25,7 +25,7 @@ class PagesController < ApplicationController
     @activities = Activity.all
     @slots = Slot.all
     @user_activities = @activities.where(user_id: current_user.id)
-    @slot = Slot.find(params[:slot_id])
+    @slot = Slot.find(params[:activity_id])
 
   end
 
