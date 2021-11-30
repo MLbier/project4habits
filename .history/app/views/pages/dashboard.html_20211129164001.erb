@@ -17,9 +17,9 @@
     <p><strong>Price: </strong><%= activity.price %>€</p>
 
     <% if activity.slots.present?  %>
-    <p><strong>Available times: </strong></p>
+    <p><strong>Booked: </strong></p>
       <% activity.slots.each do |slot| %>
-        <p><%= slot.day %> <%= slot.time %> <% if slot.bookings.count > 0 %> <%= link_to "see bookings", slot_bookings_path(slot) %> <% end %></p>
+        <%= slot.day %> <%= slot.time %>
       <% end %>
     <% end %>
       <br>

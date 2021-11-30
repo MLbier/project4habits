@@ -24,15 +24,14 @@
     <div>To book an activity, you need to add a kid profile first</div>
     <% end %>
   <% else %>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <% end %>
+
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <% @kids.each do |kid| %>
         <%= link_to kid.first_name, book_slot_path(activity_id: @activity.id, kid_id: kid.id), class: "dropdown-item" %>
         <% end %>
       </div>
-  <% end %>
-
-
-
 
 
     <% if current_user == @activity.user %>
