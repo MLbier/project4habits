@@ -1,16 +1,21 @@
 #create_kid {
-  background-color: #6930CD;
-  border-radius: 30px;
-  border: 0px;
   padding: 8px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: $slate-blue;
+  display: block;
   color: white;
+  border:3px solid white;
 }
 
 #back_btn {
-  background-color: #6930CD;
-  border-radius: 30px;
   padding: 8px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: $slate-blue;
+  display: block;
   color: white;
+  border:3px solid white;
   margin-left: 10px
 }
 

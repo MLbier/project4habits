@@ -15,6 +15,7 @@
     <div class="row justify-content-center my-3">
       <%= f.submit "save",id: 'create_kid'%>
     </div>
-    <div class='row justify-content-center my-3'><%= link_to "Remove Child", kid_path(@kid), method: :delete, data: {confirm: "Are you sure that you want to remove this child?"} %></div>
+
+    <div class='row justify-content-center my-3'><%= link_to "remove kid's profile", kid_path(@kid), method: :delete, data: {confirm: "are you sure that you want to remove this?"}, id: "create_kid"  %></div>
   <% end %>
 </div>
