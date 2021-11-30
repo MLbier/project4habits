@@ -14,7 +14,7 @@
       <h6>📍 <%= activity.location %></h6>
       <h6>⏰ <%= activity.duration %>min</h6>
       <h6>🏷<%= activity.price %>€</h6>
-      <h6>Availabel Times:</h6>
+      <h6>open slots</h6>
       <% activity.slots.each do |slot| %>
         <% @already_booked = Booking.where(slot: slot, kid: @kid).exists? %>
         <% unless @already_booked %>

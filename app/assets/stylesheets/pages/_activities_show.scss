@@ -3,39 +3,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: $purple;
   width: 300px;
-  height: 600px;
-  border-radius: 30px;
+  height: 500px;
   margin-top: 20px;
   margin-bottom: 40px;
-  box-shadow: black;
+  box-shadow: white;
   padding-bottom: 20px;
   padding-top: 20px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  border: 3px solid white;
+  color: white;
 }
 
 .btn-book {
-  border-radius: 8px;
-  background-color: #6930CD;
+  padding: 8px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: $slate-blue;
+  color: white;
+  border:3px solid white;
   align-items: center;
   //margin-left: auto;
   margin-right: 0px !important;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: white;
-  padding: 8px 24px;
   //display: inline-block;
 
 }
 
 .btn-show {
   color: white;
-  border-radius: 30px;
-  background-color: black;
+  border-radius: 20px;
+  background-color: $slate-blue;;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -48,5 +51,18 @@
 
 
 .info-text {
- color: black;
+ color: white;
+ margin-bottom: 30px;
+}
+
+.h1 {
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  background-color: $purple;
+}
+
+.button {
+   background-color: $slate-blue;
 }

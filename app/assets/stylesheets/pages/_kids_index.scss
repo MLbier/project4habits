@@ -14,7 +14,7 @@ body {
   height: 200px;
   border-radius: 30px;
   margin-bottom: 20px;
-  box-shadow: $charcoal;
+  box-shadow: white;
   padding-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -73,19 +73,22 @@ body {
 
 //for signup
 #btn-signup {
+  padding: 8px 24px;
+  border-radius: 20px;
   text-decoration: none;
-  background-color: #6930CD;
-  border-radius: 30px;
-  padding: 6px 20px;
+  background-color: $slate-blue;
+  display: block;
   color: white;
-  margin-left: 10px
+  border:3px solid white;
 }
 
 #btn-login {
+  padding: 8px 24px;
+  border-radius: 20px;
   text-decoration: none;
-  background-color: #6930CD;
-  border-radius: 30px;
-  padding: 6px 80px;
+  background-color: $slate-blue;
+  display: block;
   color: white;
+  border:3px solid white;
   margin-left: 10px
 }
