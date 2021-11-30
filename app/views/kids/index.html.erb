@@ -8,11 +8,11 @@
         <div class='card_kid'>
           <%= link_to kid_path(kid), class: "d-block" do %>
             <% if kid.gender == 'female' %>
-              <img src="https://cdn-icons-png.flaticon.com/512/163/163811.png" alt="girl">
+              <%= image_tag "girl1.png" %>
             <% elsif kid.gender == 'male' %>
-              <img src="https://cdn-icons-png.flaticon.com/512/163/163807.png" alt="boy">
+              <%= image_tag "boy1.png" %>
             <% else %>
-              <img src="https://cdn-icons-png.flaticon.com/512/1499/1499179.png" alt="bear">
+              <%= image_tag "bear.png" %>
             <% end %>
             <h4><%= kid.first_name %> <%= kid.last_name %></h4>
             <div class='age'>
