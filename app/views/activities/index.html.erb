@@ -1,17 +1,25 @@
+<div class="container" >
+  <%= link_to root_path, class: "link_to" do %>
+    <div class="arrow">
+      <%= image_tag "backarrow.png" %>
+    </div>
+  <% end %>
+</div>
+
 <div class="homepage-container">
   <div class='header'>
     <h1 class=""></h1>
   </div>
 
-<% @activities.each do |activity| %>
-  <div class="card" style="center: 4rem;">
-    <div class="card-body">
-      <h5 class="card-title"><h1><strong><%= activity.name %></strong></h1>
-      <% if activity.photo.attached? %>
-        <%= cl_image_tag activity.photo.key, height: 150, width: 200, crop: :fill %>
-      <% end %>
-      <%= link_to "details", activity_path(activity), class: "btn btn-primary" %>
+  <% @activities.each do |activity| %>
+    <div class="card" style="center: 4rem;">
+      <div class="card-body">
+        <h5 class="card-title"><h1><strong><%= activity.name %></strong></h1>
+        <% if activity.photo.attached? %>
+          <%= cl_image_tag activity.photo.key, height: 150, width: 200, crop: :fill %>
+        <% end %>
+        <%= link_to "details", activity_path(activity), class: "btn btn-primary" %>
+      </div>
     </div>
-  </div>
-<% end %>
+  <% end %>
 </div>

@@ -1,5 +1,9 @@
-<div class='text-center m-2 t-2'>
-  <%= link_to "view profile", kid_path(@kid), id: "back_booking_btn" %>
+<div class="container" >
+  <%= link_to kid_path(@kid), class: "link_to" do %>
+    <div class="arrow">
+      <%= image_tag "backarrow.png" %>
+    </div>
+  <% end %>
 </div>
 
 <div class='title-booking'>
@@ -17,7 +21,10 @@
       <h6>Availabel Times:</h6>
       <% activity.slots.each do |slot| %>
         <% @already_booked = Booking.where(slot: slot, kid: @kid).exists? %>
-        <% unless @already_booked %>
+        <% @time = slot.time %>
+        <% @day = slot.day %>
+        <% @time_already_used = Slot.joins(:bookings).where("time = '#{@time}' AND day = '#{@day}' AND bookings.kid_id = #{@kid.id}").exists? %>
+        <% unless @already_booked || @time_already_used%>
           <div class='slot-card-booking'>
             <h6><strong><%= slot.day %></strong></h6>
             <h6><%= slot.time %></h6>
