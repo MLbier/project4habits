@@ -1,3 +1,10 @@
+<div class="container" >
+  <%= link_to activity_path(@activity), class: "link_to" do %>
+    <div class="arrow">
+      <%= image_tag "backarrow.png" %>
+    </div>
+  <% end %>
+</div>
 
 <div class='title-booking'>
   <h2>book your slot for <%= @kid.first_name %></h2>
