@@ -6,7 +6,10 @@
   <% end %>
 </div>
 
-<div class='cards_kid my-5'>
+<div class='cards_kid'>
+  <div class="text-center mb-3">
+    <h3>Select a Child</h3>
+  </div>
   <% @kids.each do |kid|%>
       <% if current_user == kid.user %>
         <div class='card_kid'>
