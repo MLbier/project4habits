@@ -7,7 +7,7 @@
 <% if @user_activities.count > 0 %>
     <% @user_activities.each do |activity| %>
 
-<div class='card-body'>
+<div class='card-body '>
 <% if activity.photo.attached? %>
        <div> <%= cl_image_tag activity.photo.key, height: 100, width: 150, crop: :fill %></div>
     <% end %>

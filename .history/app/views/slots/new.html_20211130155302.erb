@@ -3,12 +3,14 @@
     <div class="col-8">
     <h1>Add a new booking time</h1>
       <%= simple_form_for [@activity, @slot] do |f| %>
-        <%= f.select :day,
-                        ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                        :prompt => "Select a day",
-                        :multiple => true
-        %>
         <%= f.input :time, :input_html => { :class => 'booking-input' } %>
+        <%# <%= f.input :day, :input_html => { :class => 'booking-input' } %>
+        <%= f.select :day,
+                    ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                    :prompt => "Select a day",
+                    :multiple => true
+    %>
+        <%# <%= f.input :photo, as: :file %>
         <%= f.submit "Submit", class: "btn btn-nav w-100 mr-sm-4" %>
       <% end %>
     </div>
