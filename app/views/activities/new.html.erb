@@ -1,4 +1,12 @@
+<div class="container" >
+  <%= link_to root_path, class: "link_to" do %>
+    <div class="arrow">
+      <%= image_tag "backarrow.png" %>
+    </div>
+  <% end %>
+</div>
+
 <div class="row justify-content-center my-3">
-<h1>Add a new activity</h1>
-<%= render 'form', activity: @activity %>
+  <h1>Add a new activity</h1>
+  <%= render 'form', activity: @activity %>
 </div>
