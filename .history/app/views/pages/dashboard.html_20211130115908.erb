@@ -24,7 +24,7 @@
     <% end %>
       <br>
       <div class="edit-delete mt-4">
-      <%= link_to 'Add booking time', new_activity_slot_path(activity) %><br>
+      <%= link_to 'Add booking time', new_slot_path(activity) %><br>
       <%= link_to 'Edit', edit_activity_path(activity) %><br>
       <%= link_to "Delete activity", activity_path(activity), method: :delete, data: {confirm: "Are you sure?"}  %>
       </div>
