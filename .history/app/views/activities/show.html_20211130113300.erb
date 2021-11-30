@@ -13,12 +13,11 @@
     <p><strong>location: </strong><%= @activity.location %></p>
     <p><strong>price: </strong><%= @activity.price %>€</p>
 
-
-
+    <% if current_user.owner != true %>
     <% if @kids == "nil" %>
     <div>To book an activity, you need to add a kid profile first</div>
-
-  <% else %>
+    <% end %>
+  <% else raise %>
         <div class="dropdown">
       <button class="btn btn-book dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         choose a kid to book
@@ -29,9 +28,9 @@
         <% end %>
     </div>
     </div>
-<% end %>
 
 
+  <% end %>
   </div>
 
 

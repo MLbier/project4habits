@@ -21,7 +21,9 @@ class PagesController < ApplicationController
     @my_activities = current_user.activities
   end
 
-
+  def new_slot
+    @slots = Slot.all
+  end
 
   def slot_bookings
     @activities = Activity.all
