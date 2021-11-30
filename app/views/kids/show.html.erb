@@ -1,3 +1,11 @@
+<div class="container" >
+  <%= link_to kids_path, class: "link_to" do %>
+    <div class="arrow">
+      <%= image_tag "backarrow.png" %>
+    </div>
+  <% end %>
+</div>
+
 <div class='show_info_cards'>
   <% if @kid.gender == 'female' %>
     <img src="https://cdn-icons-png.flaticon.com/512/163/163811.png" alt="girl">
@@ -13,10 +21,8 @@
 </div>
 
 <div class='row justify-content-center my-4 mt-5'>
-  <%= link_to "Book activity", book_activity_path(@kid), class: "booking-btn" %>
-  <%= link_to 'Edit', edit_kid_path(@kid), class: "booking-btn" %>
-  <%= link_to "Back", kids_path, class: "booking-btn" %>
-
+  <%= link_to "book activity", book_activity_path(@kid), class: "booking-btn" %>
+  <%= link_to 'edit', edit_kid_path(@kid), class: "booking-btn" %>
 </div>
 
 <% @bookings.each do |booking| %>

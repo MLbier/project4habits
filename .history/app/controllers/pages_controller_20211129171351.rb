@@ -22,11 +22,6 @@ class PagesController < ApplicationController
   end
 
   def slot_bookings
-    @activities = Activity.all
-    @slots = Slot.all
-    @user_activities = @activities.where(user_id: current_user.id)
-    @slot = Slot.find(params[:slot_id])
-
   end
 
 end

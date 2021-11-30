@@ -1,5 +1,9 @@
-<div class='text-center mt-5'>
-  <%= link_to "back to homepage", root_path, id: "back_home_btn" %>
+<div class="container" >
+  <%= link_to root_path, class: "link_to" do %>
+    <div class="arrow">
+      <%= image_tag "backarrow.png" %>
+    </div>
+  <% end %>
 </div>
 
 <div class='cards_kid my-5'>

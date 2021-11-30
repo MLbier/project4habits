@@ -32,8 +32,19 @@ user6 = User.create!(email: "user6@gmail.com", password: "12345678")
 puts 'users created'
 
 activity1 = Activity.create!(name: 'boxing', description: 'lessons are done in groupes of 2. Child has to be focused and well behaved(follow the rules). Equipment is not needed', price: '25', location: 'Goltsteinstr. 150, Cologne, Germany', availability:"2021-12-20", duration: '60', user_id: user1.id)
+
+file1 = URI.open('https://res.cloudinary.com/dqidmlzuu/image/upload/v1638185514/boxing_nnt33h.jpg')
+activity1.photo.attach(io: file1, filename: 'boxing.png', content_type: 'image/png')
+
 activity2 = Activity.create!(name: 'basketball', description: 'basketball is a team sport and we will not only teach you child to play basketball but also to become more disciplined', price: '20', location: 'Rudower Straße 44, Berlin, Germany', availability:"2021-11-17", duration: '90', user_id: user1.id)
+
+file2 = URI.open('https://res.cloudinary.com/dqidmlzuu/image/upload/v1638184057/basketball_qo0iro.jpg')
+activity2.photo.attach(io: file2, filename: 'basketball.png', content_type: 'image/png')
+
 activity3 = Activity.create!(name: 'hockey', description: 'play Hockey at the Marienburger Sport Club. Lessons are in large groupes of children in the same age group. Please bring own equipment', price: '15', location: 'Heerweg 671, Bremen, Germany', availability: "2022-01-17", duration: '115', user_id: user1.id)
+
+file3 = URI.open('https://res.cloudinary.com/dqidmlzuu/image/upload/v1638186135/hockey_m8uknx.jpg')
+activity3.photo.attach(io: file3, filename: 'hockey.png', content_type: 'image/png')
 
 kid4 = Kid.new(first_name: 'Anna', last_name: 'Miller', age: '12', gender: 'female')
 kid5 = Kid.new(first_name: 'Sophie', last_name: 'Gray', age: '11', gender: 'female')

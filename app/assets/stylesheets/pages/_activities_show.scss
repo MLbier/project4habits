@@ -3,15 +3,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #64E0DF;
+  background: white;
   width: 300px;
   height: 600px;
   border-radius: 30px;
-  margin-top: 60px;
-  margin-bottom: 80px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  box-shadow: black;
+  padding-bottom: 20px;
+  padding-top: 20px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -25,7 +25,7 @@
   margin-right: 0px !important;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: white;
   padding: 8px 24px;
   //display: inline-block;
@@ -33,9 +33,9 @@
 }
 
 .btn-show {
-  color: $sky-blue-crayola;
+  color: white;
   border-radius: 30px;
-  background-color: $celeste;
+  background-color: black;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -48,5 +48,5 @@
 
 
 .info-text {
- color: $slate-blue;
+ color: black;
 }
