@@ -7,31 +7,39 @@ a:hover {
 
 .btn-home {
   padding: 8px 24px;
-  border-radius: 30px;
-  text-decoration: none;
-  background-color: black;
+  border-radius: 20px;
+  text-decoration:none;
+  background-color: $slate-blue;
   display: inline-block;
   justify-content: center;
   color:white;
   margin-top: 30px;
+  border:3px solid white;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .btn-logout {
   padding: 8px 24px;
-  border-radius: 30px;
+  border-radius: 20px;
   text-decoration: none;
-  background-color:  white;
+  background-color: $slate-blue;
+  border:3px solid white;
   display: block;
-  color: black;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-nav {
   padding: 8px 24px;
-  border-radius: 30px;
+  border-radius: 20px;
   text-decoration: none;
-  background-color: white;
+  background-color: $slate-blue;
   display: block;
-  color: black;
+  color: white;
+  border:3px solid white;
 }
 
 .page-container {

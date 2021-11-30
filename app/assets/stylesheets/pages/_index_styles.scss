@@ -36,16 +36,18 @@
 }
 
 .btn-primary {
-  border-radius: 30px;
-  background-color: #6930CD;
-  border: 12px black;
+  padding: 8px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: $slate-blue;
+  color: white;
+  border:3px solid white;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 20px;
-  padding: 8px 24px;
 }
 
 .homepage-container {
@@ -53,10 +55,14 @@
 }
 
 .slot {
-  border: 1px solid grey;
-  border-radius: 30px;
+  padding: 8px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: $slate-blue;
+  color: white;
+  border:3px solid white;
 }
 
 .form-group input {
-  border-radius: 30px;
+  border-radius: 20px;
 }

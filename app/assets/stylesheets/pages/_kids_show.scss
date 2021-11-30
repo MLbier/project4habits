@@ -9,13 +9,14 @@
 }
 
 .booking-btn {
-  padding: 8px 18px;
+  padding: 8px 24px;
+  border-radius: 20px;
   text-decoration: none;
-  background-color: #6930CD;
-  display: inline-block;
-  border-radius: 30px;
-  color: rgb(250, 249, 249);
-  margin-left: 5px;
+  background-color: $slate-blue;
+  display: block;
+  color: white;
+  border:3px solid white;
+  margin: 10px;
 }
 
 .show_info_cards {
@@ -26,7 +27,7 @@
   height: 300px;
   border-radius: 30px;
   margin-top: 20px;
-  box-shadow: $charcoal;
+  box-shadow: white;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -56,35 +57,39 @@
 }
 
 .booked_info_card {
-  display: flex;
+  display: inline-block;
   background: #64E0DF;
-  width: 300px;
-  padding-top: 10px;
-  height: 100px;
+  width: 200px;
+  padding-top: 30px;
+  height: 250px;
   border-radius: 30px;
-  margin-top: 30px;
-  box-shadow: $charcoal;
+  margin-top: 10px;
   padding-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .booked_info_card img {
-  margin-left: 30px;
   width: 80px;
   height: 80px;
 }
 
 .cancel-booking-btn a {
-  padding: 6px 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 5px;
   text-decoration: none;
-  background-color: #6930CD;
-  display: inline-block;
-  border-radius: 30px;
-  color: rgb(250, 249, 249);
-  margin-left: 5px;
+  text-align: auto;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
 }
 
 .cancel-booking-btn a:hover {
@@ -94,5 +99,16 @@
 .arrow img {
   width: 30px;
   height: 30px;
-  margin-left: 10px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+}
+
+.booked-card-text {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+
 }
