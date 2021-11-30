@@ -6,17 +6,20 @@
   <% end %>
 </div>
 
-<div class='cards_kid my-5'>
+<div class='cards_kid'>
+  <div class="text-center mb-3">
+    <h3>Select a Child</h3>
+  </div>
   <% @kids.each do |kid|%>
       <% if current_user == kid.user %>
         <div class='card_kid'>
           <%= link_to kid_path(kid), class: "d-block" do %>
             <% if kid.gender == 'female' %>
-              <img src="https://cdn-icons-png.flaticon.com/512/163/163811.png" alt="girl">
+              <%= image_tag "girl1.png" %>
             <% elsif kid.gender == 'male' %>
-              <img src="https://cdn-icons-png.flaticon.com/512/163/163807.png" alt="boy">
+              <%= image_tag "boy1.png" %>
             <% else %>
-              <img src="https://cdn-icons-png.flaticon.com/512/1499/1499179.png" alt="bear">
+              <%= image_tag "bear.png" %>
             <% end %>
             <h4><%= kid.first_name %> <%= kid.last_name %></h4>
             <div class='age'>
