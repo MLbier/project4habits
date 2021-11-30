@@ -1,5 +1,4 @@
 <div class="booked-slots m-3">
-<%= link_to "back to the dashboard", dashboard_path, class: '' %>
 <% @slot.bookings.each do |booking| %>
 
 
@@ -10,9 +9,8 @@
 
     <h1><strong><%= @slot.time %></strong></h1>
     <p><%= @slot.day %></p>
-    <p><strong>Parent's name:</strong> <%= booking.kid.user.first_name %></p>
     <p>
-    <strong>Kid's name:</strong> <%= booking.kid.first_name %> <%= booking.kid.last_name %> <%= booking.kid.user.email  %>
+    <%= booking.kid.first_name %> <%= booking.kid.last_name %>
     </p>
     <p>
     <strong>Age:</strong> <%= booking.kid.age %>
@@ -26,5 +24,5 @@
 
 
 <% end %>
-
+<%= link_to "back to the dashboard", dashboard_path, class: '' %>
 </div>

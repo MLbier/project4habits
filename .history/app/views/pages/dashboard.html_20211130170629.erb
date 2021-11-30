@@ -1,21 +1,13 @@
-<div class="container" >
-  <%= link_to root_path, class: "link_to" do %>
-    <div class="arrow">
-      <%= image_tag "backarrow.png" %>
-    </div>
-  <% end %>
-</div>
-
 <div class="container my-4 text-center">
 <div class="row text-center">
 
 <div class="col bg-white">
-<h2 class="mt-2">my activities</h2>
+<h2 class="mt-2">My Activities</h2>
 
 <% if @user_activities.count > 0 %>
     <% @user_activities.each do |activity| %>
 
-<div class='card-body'>
+<div class='card-body '>
 <% if activity.photo.attached? %>
        <div> <%= cl_image_tag activity.photo.key, height: 100, width: 150, crop: :fill %></div>
     <% end %>
@@ -23,20 +15,20 @@
   <div class='info-text mx-4'>
 
     <h1><strong><%= activity.name %></strong></h1>
-    <p><strong>location: </strong><%= activity.location %></p>
-    <p><strong>price: </strong><%= activity.price %>€</p>
+    <p><strong>Location: </strong><%= activity.location %></p>
+    <p><strong>Price: </strong><%= activity.price %>€</p>
 
     <% if activity.slots.present?  %>
-    <p><strong>available times: </strong></p>
+    <p><strong>Available times: </strong></p>
       <% activity.slots.each do |slot| %>
         <p><%= slot.day %> <%= slot.time %> <% if slot.bookings.count > 0 %> <%= link_to "see bookings", slot_bookings_path(slot) %> <% end %></p>
       <% end %>
     <% end %>
       <br>
       <div class="edit-delete mt-4">
-      <%= link_to 'add a booking time', new_activity_slot_path(activity) %><br>
-      <%= link_to 'edit', edit_activity_path(activity) %><br>
-      <%= link_to "delete the activity", activity_path(activity), method: :delete, data: {confirm: "are you sure?"}  %>
+      <%= link_to 'Add booking time', new_activity_slot_path(activity) %><br>
+      <%= link_to 'Edit', edit_activity_path(activity) %><br>
+      <%= link_to "Delete activity", activity_path(activity), method: :delete, data: {confirm: "Are you sure?"}  %>
       </div>
 
 
@@ -49,7 +41,7 @@
 
 <% end %>
     <% else %>
-    <p>you don't have any activities yet...</p>
+    <p>You don't have any activities yet...</p>
     <% end %>
 
 
