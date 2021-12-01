@@ -7,19 +7,23 @@
 </div>
 
 <div class="homepage-container">
+
   <div class='header'>
     <h1 class=""></h1>
   </div>
 
   <% @activities.each do |activity| %>
-    <div class="card" style="center: 4rem;">
-      <div class="card-body">
-        <h5 class="card-title"><h1><strong><%= activity.name %></strong></h1>
+    <%= link_to activity_path(activity), class: "d-block" do %>
+      <div class="card-index-activity">
         <% if activity.photo.attached? %>
-          <%= cl_image_tag activity.photo.key, height: 150, width: 200, crop: :fill %>
+          <%= cl_image_tag activity.photo.key,crop: :fill %>
         <% end %>
-        <%= link_to "details", activity_path(activity), class: "btn btn-primary" %>
+        <h2><%= activity.name %></strong></h2>
+        <div class="description-card-activity">
+          <h6> <%= activity.description.first(100)%>...</h6>
+        </div>
       </div>
-    </div>
+    <% end %>
   <% end %>
+
 </div>
