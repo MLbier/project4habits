@@ -41,10 +41,18 @@ activity2 = Activity.create!(name: 'basketball', description: 'basketball is a t
 file2 = URI.open('https://res.cloudinary.com/dqidmlzuu/image/upload/v1638184057/basketball_qo0iro.jpg')
 activity2.photo.attach(io: file2, filename: 'basketball.png', content_type: 'image/png')
 
-activity3 = Activity.create!(name: 'hockey', description: 'play Hockey at the Marienburger Sport Club. Lessons are in large groupes of children in the same age group. Please bring own equipment', price: '15', location: 'Heerweg 671, Bremen, Germany', availability: "2022-01-17", duration: '115', user_id: user1.id)
+activity3 = Activity.create!(name: 'field hockey', description: 'play Hockey at the Marienburger Sport Club. Lessons are in large groupes of children in the same age group. Please bring own equipment', price: '15', location: 'Heerweg 671, Bremen, Germany', availability: "2022-01-17", duration: '115', user_id: user1.id)
 
-file3 = URI.open('https://res.cloudinary.com/dqidmlzuu/image/upload/v1638186135/hockey_m8uknx.jpg')
-activity3.photo.attach(io: file3, filename: 'hockey.png', content_type: 'image/png')
+file3 = File.open(Rails.root.join('app/assets/images/field-hockey.jpg'))
+activity3.photo.attach(io: file3, filename: 'field-hockey.jpg', content_type: 'image/jpeg')
+
+
+
+activity4 = Activity.create!(name: 'ice hockey', description: 'play Hockey at the Marienburger Sport Club. Lessons are in large groupes of children in the same age group. Please bring own equipment', price: '15', location: 'Heerweg 671, Bremen, Germany', availability: "2022-01-17", duration: '115', user_id: user1.id)
+
+file4 = URI.open('https://res.cloudinary.com/dqidmlzuu/image/upload/v1638186135/hockey_m8uknx.jpg')
+activity4.photo.attach(io: file3, filename: 'hockey.png', content_type: 'image/png')
+
 
 kid4 = Kid.new(first_name: 'Anna', last_name: 'Miller', age: '12', gender: 'female')
 kid5 = Kid.new(first_name: 'Sophie', last_name: 'Gray', age: '11', gender: 'female')
