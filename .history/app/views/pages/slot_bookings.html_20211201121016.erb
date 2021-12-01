@@ -1,11 +1,5 @@
 <div class="booked-slots m-3 text-center">
-<div class="container" >
-  <%= link_to dashboard_path, class: "link_to" do %>
-    <div class="arrow">
-      <%= image_tag "backarrow.png" %>
-    </div>
-  <% end %>
-</div>
+<%= link_to "back to the dashboard", dashboard_path, class: '' %>
 <div class="my-2">
 <h1><strong><%= @slot.time %></strong></h1>
     <h2><strong><%= @slot.day %></strong></h2>
@@ -24,7 +18,7 @@
     <p>
     <strong>Kid:</strong> <%= booking.kid.first_name %> <%= booking.kid.last_name %>
     </p>
-    <%= link_to "notify parent", activities_path, class: "btn-home my-2" %>
+    <%= link_to "Notify parent", activities_path, class: "btn-home" %>
     <% end %>
 
   </div>
