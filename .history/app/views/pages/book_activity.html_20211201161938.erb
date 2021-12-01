@@ -18,9 +18,11 @@
       <h6>📍 <%= activity.location %></h6>
       <h6>⏰ <%= activity.duration %>min</h6>
       <h6>🏷<%= activity.price %>€</h6>
+      <h6>open slots</h6>
+
       <div class="dropdown">
         <button class="btn btn-book-show dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        open slots
+        choose a time
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
@@ -34,7 +36,7 @@
 
 
 
-        <%= link_to "#{slot.day} " "#{slot.time}", kid_bookings_path(kid_id: @kid.id, slot_id: slot.id), method: :post, data: {confirm: "Are you sure you want to book this slot?"}, class: "dropdown-item" %>
+        <%= link_to "#{slot.day}", kid_bookings_path(kid_id: @kid.id, slot_id: slot.id), method: :post, data: {confirm: "Are you sure you want to book this slot?"}, class: "dropdown-item" %>
 
 
 
