@@ -23,7 +23,7 @@
 
 
   <% if @kids.count == 0 %>
-  <p class="mx-3">to book an activity, you need to <%= link_to "add a kid", new_kid_path(), class: "" %></p>
+  <p>to book an activity, you need to <%= link_to "add a kid", kid_new_path(), class: "" %></p>
   <% else %>
     <div class="dropdown">
       <button class="btn btn-book-show dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

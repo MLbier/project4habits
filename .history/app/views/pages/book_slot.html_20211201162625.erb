@@ -26,9 +26,9 @@
 
 
 
-
-        <%= link_to "#{slot.day} " "#{slot.time}", kid_bookings_path(kid_id: @kid.id, slot_id: slot.id), method: :post, data: {confirm: "Are you sure you want to book this slot?"}, class: "dropdown-item" %>
-
+        <% @kids.each do |kid| %>
+        <%= link_to "#{slot.day}" "#{slot.time}", kid_bookings_path(kid_id: @kid.id, slot_id: slot.id), method: :post, data: {confirm: "Are you sure you want to book this slot?"}, class: "dropdown-item" %>
+        <% end %>
 
 
       <% end %>

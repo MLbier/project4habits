@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-8">
+    <h1>Add a new time</h1>
+      <%= simple_form_for [@activity, @slot] do |f| %>
+        <%= f.select :day,
+                        ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                        :prompt => "Select a day",
+                        :multiple => true
+        %>
+        <%= f.input :time, :input_html => { :class => 'booking-input' } %>
+        <%= f.submit "Submit", class: "btn btn-nav w-100 mr-sm-4" %>
+      <% end %>
+    </div>
+  </div>
+</div>
