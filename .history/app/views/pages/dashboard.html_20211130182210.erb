@@ -7,14 +7,14 @@
 <% if @user_activities.count > 0 %>
     <% @user_activities.each do |activity| %>
 
-<div class='container-dashboard'>
+<div class='show-container' style="display:block">
     <% if activity.photo.attached? %>
           <%= cl_image_tag activity.photo.key, height: 150, width: 200, crop: :fill %>
     <% end %>
 
   <div class='info-text mx-4'>
 
-    <h1 class="my-2"><strong><%= activity.name %></strong></h1>
+    <h1><strong><%= activity.name %></strong></h1>
     <p><strong>Location: </strong><%= activity.location %></p>
     <p><strong>Price: </strong><%= activity.price %>€</p>
 
