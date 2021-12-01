@@ -1,0 +1,30 @@
+<div class="booked-slots m-3">
+<%= link_to "back to the dashboard", dashboard_path, class: '' %>
+<% @slot.bookings.each do |booking| %>
+
+
+<div class='show-container'>
+    <%#=cl_image_tag @activity.photo.key%>
+
+  <div class='info-text mx-4'>
+
+    <h1><strong><%= @slot.time %></strong></h1>
+    <h2><strong><%= @slot.day %></strong></h2>
+    <p><strong>Parent's name:</strong> <%= booking.kid.user.first_name %></p>
+    <p>
+    <strong>Kid's name:</strong> <%= booking.kid.first_name %> <%= booking.kid.last_name %>
+    </p>
+    <p>
+    <strong>Age:</strong> <%= booking.kid.age %>
+    </p>
+
+
+
+  </div>
+</div>
+
+
+
+<% end %>
+
+</div>
