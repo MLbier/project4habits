@@ -7,8 +7,8 @@ class AllertsController < ApplicationController
 
     client = Twilio::REST::Client.new(ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN'])
     client.messages.create({
-    from: '+12077076871',
-    to: '+4524777766',
+    from: '+13253350403',
+    to: '+4915259020002',
     body: 'Dear parent, your kid arrived on time at our club today. Have a calm day.'
     })
 
