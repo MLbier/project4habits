@@ -24,7 +24,11 @@
     <p>
     <strong>Kid:</strong> <%= booking.kid.first_name %> <%= booking.kid.last_name %>
     </p>
-    <%= link_to "notify parent", notify_path(id: @slot.id), class: "btn-home my-2" %>
+    <% if !booking.status  %>
+      <%= link_to "notify parent", notify_path(id: @slot.id, booking_id: booking.id), class: "btn-home my-2" %>
+    <% else %>
+      <h1> notified! </h1>
+    <% end %>
     <% end %>
 
   </div>
