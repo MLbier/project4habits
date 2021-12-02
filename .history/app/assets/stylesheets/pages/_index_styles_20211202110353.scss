@@ -73,12 +73,11 @@
 
 .dropdown-menu {
   border-radius: 20px;
+
 }
 
-.custom-dropdown-item {}
-
-.custom-dropdown-item:active, .custom-dropdown-item:hover, .custom-dropdown-item:visited, .custom-dropdown-item:focus {
-  background-color: #8bd5d5 !important;
+a.dropdown-item:hover {
+  background-color: #64E0DF;
 }
 
 .container-dashboard {
