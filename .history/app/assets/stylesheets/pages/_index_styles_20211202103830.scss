@@ -68,20 +68,12 @@
 }
 
 .form-control {
-  border-radius: 0px;
-  border: 1px solid white;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-radius: 20px;
 }
 
 .dropdown-menu {
   border-radius: 20px;
-}
 
-.custom-dropdown-item {}
-
-.custom-dropdown-item:active, .custom-dropdown-item:hover, .custom-dropdown-item:visited, .custom-dropdown-item:focus {
-  background-color: #8bd5d5 !important;
 }
 
 .container-dashboard {

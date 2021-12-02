@@ -1,25 +1,10 @@
-<div class="d-flex">
-  <div class="container">
-    <%= link_to kid_path(@kid), class: "link_to" do %>
-      <div class="arrow">
-        <%= image_tag "backarrow.png" %>
-      </div>
-    <% end %>
-  </div>
-
-</div>
-
-<div class="d-flex justify-content-center">
-  <%= form_tag book_activity_path, class: "form-search d-flex col-9", method: :get do %>
-    <%= text_field_tag :query,
-      params[:query],
-      class: "form-control",
-      placeholder: "Search"
-    %>
-    <%= submit_tag "Go", class: "btn btn-search mb-0" %>
+<div class="container" >
+  <%= link_to kid_path(@kid), class: "link_to" do %>
+    <div class="arrow">
+      <%= image_tag "backarrow.png" %>
+    </div>
   <% end %>
 </div>
-
 
 <div class='title-booking'>
   <h2>choose your activity for <%= @kid.first_name %></h2>
@@ -30,10 +15,10 @@
     <div class="main-card-booking">
       <h4><%= activity.name %></h4>
       <p class="card-text"><%= activity.description %></p>
-      <div class="icons text-left ml-3 my-2">
+      <div class="icons text-left">
       <h6>📍 <%= activity.location %></h6>
-      <h3>⏰ <%= activity.duration %>min</h3>
-      <h3>🏷 <%= activity.price %>€</h3>
+      <h6>⏰ <%= activity.duration %>min</h6>
+      <h6>🏷<%= activity.price %>€</h6>
       </div>
       <div class="dropdown">
         <button class="btn btn-book-show dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
