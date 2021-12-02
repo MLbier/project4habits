@@ -1,10 +1,25 @@
-<div class="container" >
-  <%= link_to kid_path(@kid), class: "link_to" do %>
-    <div class="arrow">
-      <%= image_tag "backarrow.png" %>
-    </div>
+<div class="d-flex">
+  <div class="container">
+    <%= link_to kid_path(@kid), class: "link_to" do %>
+      <div class="arrow">
+        <%= image_tag "backarrow.png" %>
+      </div>
+    <% end %>
+  </div>
+
+</div>
+
+<div class="d-flex justify-content-center">
+  <%= form_tag book_activity_path, class: "form-search d-flex col-9", method: :get do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+      placeholder: "Search"
+    %>
+    <%= submit_tag "Go", class: "btn btn-search mb-0" %>
   <% end %>
 </div>
+
 
 <div class='title-booking'>
   <h2>choose your activity for <%= @kid.first_name %></h2>
