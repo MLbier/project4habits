@@ -1,0 +1,26 @@
+.container-dashboard {
+  justify-content: center;
+  align-items: center;
+  background-color: $french-violet;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+}
+
+.container-dashboard img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.links-dashboard a {
+  color: rgb(0, 251, 255);
+  text-decoration: underline;
+}
