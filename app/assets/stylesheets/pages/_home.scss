@@ -1,24 +1,27 @@
 // Specific CSS for your home-page
-a:hover {
-  text-decoration: none;
-  color: rgb(250, 249, 249);
+.btn-home:hover {
+  color: $cotton-candy;
+  background-color: black;
 }
-
 
 .btn-home {
-  padding: 8px 24px;
-  border-radius: 20px;
-  text-decoration:none;
-  background-color: $slate-blue;
-  display: inline-block;
-  justify-content: center;
-  color:white;
-  margin-top: 30px;
-  border:3px solid white;
+  font-size: 1.7em;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  margin: 20px;
+  padding: 8px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: $slate-blue;
+  color: white;
+  border:3px solid white;
+  display: block
 
 }
+
+
 
 .btn-logout {
   padding: 8px 24px;
@@ -57,7 +60,7 @@ a:hover {
 
 
 .img-fluid {
-  margin-left: 6px;
+  margin-left: 8px;
   margin-right: auto;
   justify-content: center;
 }
