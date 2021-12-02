@@ -189,19 +189,33 @@ Slot.create!(day: "Tuesday", time: "13:00", activity_id: activity15.id)
 puts 'saving.....'
 
 activity1.user = user1
+activity1.save!
 activity2.user = user2
+activity2.save!
 activity3.user = user3
+activity3.save!
 activity4.user = user3
+activity4.save!
 activity5.user = user3
+activity5.save!
 activity6.user = user3
+activity6.save!
 activity7.user = user2
+activity7.save!
 activity8.user = user2
+activity8.save!
 activity9.user = user2
+activity9.save!
 activity10.user = user2
+activity10.save!
 activity11.user = user1
+activity11.save!
 activity12.user = user1
+activity12.save!
 activity13.user = user1
+activity13.save!
 activity14.user = user1
+activity14.save!
 
 kid4.user = user4
 kid5.user = user5
