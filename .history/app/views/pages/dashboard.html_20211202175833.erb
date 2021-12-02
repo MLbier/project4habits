@@ -40,29 +40,18 @@
     <h1 class="my-4"><strong><%= activity.name %></strong></h1>
     <div class="mr-2 ml-2 mt-2">
     <p><strong>📍 </strong><%= activity.location %></p>
-    <h2><strong>🏷 </strong><%= activity.price %>€</h2>
+    <h3><strong>🏷 </strong><%= activity.price %>€</h3>
     </div>
 
     <% if activity.slots.present?  %>
-    <div class="dropdown">
-  <button class="btn btn-show dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Available times & bookings
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-
+    <p><strong>Available times: </strong></p>
       <% activity.slots.each do |slot| %>
-        <p class="dropdown-item"><%= slot.day %> <%= slot.time %><% if slot.bookings.count > 0 %> <%= link_to "see bookings", slot_bookings_path(slot) %> <% end %>
-      <% end %></p>
-
+        <p><%= slot.day %> <%= slot.time %> <% if slot.bookings.count > 0 %> <%= link_to "see bookings", slot_bookings_path(slot) %> <% end %></p>
+      <% end %>
     <% end %>
-
- </div>
-</div>
-
-    <%= link_to 'add booking time', new_activity_slot_path(activity), class: "text-uppercase" %>
       <br>
       <div class="edit-delete my-3 mt-3">
-
+      <%= link_to 'add booking time', new_activity_slot_path(activity) %><br>
       <%= link_to 'edit', edit_activity_path(activity) %><br>
       <%= link_to "delete activity", activity_path(activity), method: :delete, data: {confirm: "Are you sure?"}  %>
       </div>

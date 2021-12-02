@@ -44,6 +44,7 @@
     </div>
 
     <% if activity.slots.present?  %>
+    <h5 class="mt-3">Available times:</h5>
     <div class="dropdown">
   <button class="btn btn-show dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Available times & bookings
@@ -59,7 +60,7 @@
  </div>
 </div>
 
-    <%= link_to 'add booking time', new_activity_slot_path(activity), class: "text-uppercase" %>
+    <%= link_to 'add booking time', new_activity_slot_path(activity), class: "btn btn-book-show" %>
       <br>
       <div class="edit-delete my-3 mt-3">
 
