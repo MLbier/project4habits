@@ -6,7 +6,12 @@ class PagesController < ApplicationController
 
   def book_activity
     @kid = Kid.find(params[:kid_id])
-    @activities = Activity.all
+    if params[:query].present?
+      sql_query = "name ILIKE :query OR description ILIKE :query"
+      @activities = Activity.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @activities = Activity.all
+    end
   end
 
   def book_slot
@@ -16,7 +21,12 @@ class PagesController < ApplicationController
 
   def dashboard
     @bookings = Booking.all
-    @activities = Activity.all
+    if params[:query].present?
+      sql_query = "name ILIKE :query OR description ILIKE :query"
+      @activities = Activity.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @activities = Activity.all
+    end
     @user_activities = @activities.where(user_id: current_user.id)
     @my_activities = current_user.activities
   end

@@ -68,7 +68,10 @@
 }
 
 .form-control {
-  border-radius: 20px;
+  border-radius: 0px;
+  border: 1px solid white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .dropdown-menu {

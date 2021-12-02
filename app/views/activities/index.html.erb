@@ -1,8 +1,22 @@
-<div class="container" >
-  <%= link_to root_path, class: "link_to" do %>
-    <div class="arrow">
-      <%= image_tag "backarrow.png" %>
-    </div>
+<div class="d-flex">
+  <div class="container">
+    <%= link_to root_path, class: "link_to" do %>
+      <div class="arrow">
+        <%= image_tag "backarrow.png" %>
+      </div>
+    <% end %>
+  </div>
+
+</div>
+
+<div class="d-flex justify-content-center">
+  <%= form_tag activities_path, class: "form-search d-flex col-9", method: :get do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+      placeholder: "Search"
+    %>
+    <%= submit_tag "Go", class: "btn btn-search mb-0" %>
   <% end %>
 </div>
 
