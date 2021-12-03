@@ -38,10 +38,17 @@
                 <p><strong>price: </strong><%= activity.price %>€</p>
 
                 <% if activity.slots.present?  %>
-                <p><strong>Available times: </strong></p>
+                  <div class="dropdown">
+                  <button class="btn btn-show dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Available times
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
                   <% activity.slots.each do |slot| %>
-                    <p class="links-dashboard"><%= slot.day %> <%= slot.time %> <% if slot.bookings.count > 0 %><%= link_to "see bookings", slot_bookings_path(slot) %><% end %></p>
-                  <% end %>
+                    <p class="dropdown-item"><%= slot.day %> <%= slot.time %><% if slot.bookings.count > 0 %> <%= link_to "see bookings", slot_bookings_path(slot) %> <% end %>
+                  <% end %></p>
+                  </div>
+                </div>
                 <% end %>
               <br>
                 <div class="links-dashboard mb-1">
