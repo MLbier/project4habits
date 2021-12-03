@@ -9,3 +9,38 @@
   margin: 10px 0 10px 0;
   padding: 5px 15px 5px 15px;
 }
+
+#activity_photo {
+  display: inline-block;
+  top: 150px;
+  width: 150px;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  width: 129px;
+}
+
+#activity_photo::-webkit-file-upload-button {
+  visibility: hidden;
+}
+#activity_photo::before {
+  content: 'Select Photo';
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1px solid #999;
+  border-radius: 30px;
+  padding: 8px 18px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+#activity_photo:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
