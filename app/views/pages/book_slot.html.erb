@@ -6,13 +6,13 @@
   <% end %>
 </div>
 
-<div class='title-booking'>
+<div class='title-booking ml-3 my-2'>
   <h2>book your slot for <%= @kid.first_name %></h2>
 </div>
 <div class="main-card-booking custom-slot">
-      <h4><%= @activity.name %></h4>
-      <p class="card-text p-1"><%= @activity.description %></p>
-      <div class="icons text-left ml-3 my-2">
+      <h1><%= @activity.name %></h1>
+      <p class="card-text p-4"><%= @activity.description %></p>
+      <div class="icons text-left ml-4 my-4">
       <h6>📍 <%= @activity.location %></h6>
       <h3>⏰ <%= @activity.duration %>min</h3>
       <h3>🏷 <%= @activity.price %>€</h3>

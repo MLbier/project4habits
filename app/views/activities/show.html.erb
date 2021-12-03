@@ -13,7 +13,8 @@
     <% if @activity.photo.attached? %>
       <%= #cl_image_tag @activity.photo.key,crop: :fill %>
     <% end %>
-    <div class="mr-2 ml-2 mt-2">
+    <div class="mr-2 ml-2 mt-2 ">
+
       <h1><strong><%= @activity.name %></strong></h1>
       <p><%= @activity.description %></p>
       <div class="icons text-left ml-3 my-2">

@@ -32,7 +32,7 @@
         <% if activity.photo.attached? %>
           <%= cl_image_tag activity.photo.key,crop: :fill %>
         <% end %>
-        <h2><%= activity.name %></strong></h2>
+        <h1><%= activity.name %></strong></h1>
         <div class="description-card-activity">
           <p> <%= activity.description.first(100)%>...</p>
         </div>
