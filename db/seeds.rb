@@ -51,9 +51,6 @@ activity5 = Activity.create!(name: 'rugby', description: 'rugby is a contact-spo
 file5 = File.open(Rails.root.join('app/assets/images/rugby.jpg'))
 activity5.photo.attach(io: file5, filename: 'rugby.jpg', content_type: 'image/jpeg')
 
-activity15 = Activity.create!(name: 'football', description: 'football is a team-sport where new friends are made. your child must already be able to play football. lessons are in larger groupes of children in the same age group. Please bring appropriate footwear', price: '12', location: 'FC Kobenhavn Per Henrik Lings Allé 2, 2100 København', availability: "2022-01-17", duration: '90', user_id: user1.id)
-file15 = File.open(Rails.root.join('app/assets/images/football1.jpg'))
-activity15.photo.attach(io: file15, filename: 'football1.jpg', content_type: 'image/jpeg')
 
 activity6 = Activity.create!(name: 'judo', description: 'judo is a combat sport and will teach your child to focus and to become a better person. Lessons are in small groupes of 10 children.', price: '8', location: 'SHC Fight Gym Raffinaderivej 10e, 2300 København', availability: "2022-01-17", duration: '45', user_id: user1.id)
 file6 = File.open(Rails.root.join('app/assets/images/judo.png'))
@@ -63,7 +60,7 @@ activity7 = Activity.create!(name: 'indoor football', description: 'looking for 
 file7 = File.open(Rails.root.join('app/assets/images/indoor-football.jpg'))
 activity7.photo.attach(io: file7, filename: 'indoor-football.jpg', content_type: 'image/jpeg')
 
-activity8 = Activity.create!(name: 'golfing', description: 'the Marienburger Golf Club is a beautiful place where you can start your golfing career. Lessons are in groupes of 2. Please bring your own equipment', price: '25', location: 'Amager Ishockey Club Røllikevej 1, 2770 Kastrup', availability: "2022-01-17", duration: '85', user_id: user1.id)
+activity8 = Activity.create!(name: 'golf', description: 'the Marienburger Golf Club is a beautiful place where you can start your golfing career. Lessons are in groupes of 2. Please bring your own equipment', price: '25', location: 'Amager Ishockey Club Røllikevej 1, 2770 Kastrup', availability: "2022-01-17", duration: '85', user_id: user1.id)
 file8 = File.open(Rails.root.join('app/assets/images/golfing.jpg'))
 activity8.photo.attach(io: file8, filename: 'golfing.jpg', content_type: 'image/jpeg')
 

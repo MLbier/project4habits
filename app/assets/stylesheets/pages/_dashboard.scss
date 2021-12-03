@@ -1,7 +1,7 @@
 .container-dashboard {
   justify-content: center;
   align-items: center;
-  background-color: $french-violet;
+  background-color: $tufts-blue;
   width: 300px;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -9,18 +9,18 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  color: white;
-  border-radius: 30px;
+  color: blanchedalmond;
+  border-radius: 12px;
 }
 
 .container-dashboard img {
   width: 100%;
   height: auto;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  //border-top-left-radius: 30px;
+  //border-top-right-radius: 30px;
 }
 
 .links-dashboard a {
-  color: rgb(0, 251, 255);
-  text-decoration: underline;
+  color: $aquamarine;
+  font-size: 1,7rem;
 }

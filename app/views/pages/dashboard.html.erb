@@ -23,7 +23,7 @@
 <div class="container my-4 text-center">
   <div class="row">
     <div class="col">
-      <h2>my activities</h2>
+      <h2>overview clubs</h2>
       <% if @user_activities.count > 0 %>
         <% @user_activities.each do |activity| %>
           <% if current_user == activity.user %>
@@ -34,27 +34,29 @@
               <div class='info-text mx-4'>
 
                 <h1 class="my-4"><strong><%= activity.name %></strong></h1>
-                <p><strong>location: </strong><%= activity.location %></p>
-                <p><strong>price: </strong><%= activity.price %>€</p>
 
                 <% if activity.slots.present?  %>
-                <p><strong>Available times: </strong></p>
+                <h5><strong>schedule:</strong></h5>
                   <% activity.slots.each do |slot| %>
                     <p class="links-dashboard"><%= slot.day %> <%= slot.time %> <% if slot.bookings.count > 0 %><%= link_to "see bookings", slot_bookings_path(slot) %><% end %></p>
                   <% end %>
                 <% end %>
               <br>
-                <div class="links-dashboard mb-1">
+                <div class="links-dashboard mb-2">
                   <%= link_to 'add booking time', new_activity_slot_path(activity)%><br>
+                  <div class="mt-2 ">
                   <%= link_to 'edit', edit_activity_path(activity) %><br>
+                  <div class="mt-2 ">
                   <%= link_to "delete activity", activity_path(activity), method: :delete, data: {confirm: "Are you sure?"}  %>
                 </div>
+              </div>
+              </div>
               </div>
             </div>
           <% end %>
         <% end %>
       <% else %>
-        <p>You don't have any activities yet...</p>
+        <p>you don't have any activities yet...</p>
       <% end %>
     </div>
   </div>

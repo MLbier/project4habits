@@ -1,5 +1,6 @@
 .card-index-activity {
   padding-bottom: 10px;
+  padding-top: 10px;
   align-items: center;
   background: $tufts-blue;
   width: 300px;
@@ -10,24 +11,27 @@
   margin-right: auto;
   text-align: center;
   color: blanchedalmond;
-  border-radius: 30px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 12px;
+  box-shadow: $tufts-blue 0px 4px 16px;
+
 
 }
 .description-card-activity {
   margin: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 40px;
 }
 
+
 .card-index-activity img {
-  width: 100%;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  height: 170px;
-  margin-bottom: 15px;
+  //border-top-left-radius: 10px;
+  //border-top-right-radius: 10px;
+  height: auto;
+  width: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .btn-book-show {

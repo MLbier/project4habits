@@ -30,11 +30,11 @@
     <%= link_to activity_path(activity), class: "d-block" do %>
       <div class="card-index-activity">
         <% if activity.photo.attached? %>
-          <%= cl_image_tag activity.photo.key,crop: :fill %>
+          <%= cl_image_tag activity.photo.key,crop: :fill, width: 250  %>
         <% end %>
         <h1><%= activity.name %></strong></h1>
         <div class="description-card-activity">
-          <p> <%= activity.description.first(100)%>...</p>
+          <p> <%= activity.description.first(49)%>...</p>
         </div>
       </div>
     <% end %>

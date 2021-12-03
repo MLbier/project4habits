@@ -11,7 +11,7 @@
 
   justify-content: center;
   align-items: center;
-  color: $vivid-sky-blue;
+  color: $tufts-blue;
 }
 
 
@@ -28,7 +28,7 @@
   height: 300px;
   border-radius: 30px;
   margin-top: 30px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: white 0px 4px 16px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -61,24 +61,24 @@
   background-color: $slate-blue;
   color: white;
   border:3px solid white;
+  box-shadow: white 0px 4px 16px;
 }
 
 .form-group input {
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .form-control {
-  border-radius: 0px;
+  border-radius: 30px;
   border: 1px solid white;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 .dropdown-menu {
   border-radius: 20px;
 }
 
-.custom-dropdown-item {}
 
 .custom-dropdown-item:active, .custom-dropdown-item:hover, .custom-dropdown-item:visited, .custom-dropdown-item:focus {
   background-color: #8bd5d5 !important;
@@ -90,11 +90,11 @@
   // margin: 10px 0 10px 0;
   justify-content: center;
   align-items: center;
-  background: $purple;
+  background: $tufts-blue;
   width: 300px;
   margin-top: 20px;
   margin-bottom: 40px;
-  box-shadow: white;
+  box-shadow: white 0px 4px 16px;
   padding-bottom: 20px;
   padding-top: 20px;
   margin-left: auto;
