@@ -1,0 +1,5 @@
+meta_product_name: "4habits"
+meta_title: "4habits - find amazing activities for kids and have fun!"
+meta_description: "4habits is an app that helps parents and kids to create healthy habits. For example, finding diverse activities after school with the opportunity to get a message from the club that kid arrived."
+meta_image: "cover.png" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards
