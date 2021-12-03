@@ -1,5 +1,5 @@
 <div class='row justify-content-center my-3'>
-  <h2>Log in</h2>
+  <h1>login</h1>
 </div>
 
 <div class='row justify-content-center my-3'>
@@ -15,8 +15,8 @@
       <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
     </div>
 
-    <div class="form-actions">
-      <%= f.button :submit, "Log in", id:'btn-login' %>
+    <div class="row justify-content-center my-5 mr-1 ">
+      <%= f.button :submit, "login", id:'btn-login' %>
     </div>
   <% end %>
 </div>

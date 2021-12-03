@@ -11,16 +11,18 @@ body {
   justify-content: center;
   align-items: center;
   background: #64E0DF;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 30px;
-  margin-bottom: 20px;
-  box-shadow: white;
+  margin-bottom: 15px;
+  box-shadow: white 0px 4px 16px;;
   padding-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   transition: transform .2s;
+  padding-top: 15px;
+
 }
 
 .card_kid :hover {

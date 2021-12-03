@@ -28,13 +28,20 @@
 
 <% @activities.each do |activity| %>
     <div class="main-card-booking">
-      <h4><%= activity.name %></h4>
+      <h1><%= activity.name %></h1>
       <p class="card-text"><%= activity.description %></p>
       <div class="icons text-left ml-3 my-2">
       <h6>📍 <%= activity.location %></h6>
+      <div class="mt-4 ">
       <h3>⏰ <%= activity.duration %>min</h3>
+      <div class="mt-4 ">
       <h3>🏷 <%= activity.price %>€</h3>
+      <div class="mt-4 ">
       </div>
+      </div>
+      </div>
+      </div>
+
       <div class="dropdown">
         <button class="btn btn-book-show dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         open slots
