@@ -36,10 +36,21 @@
                 <h1 class="my-4"><strong><%= activity.name %></strong></h1>
 
                 <% if activity.slots.present?  %>
-                <h5><strong>schedule:</strong></h5>
+
+               
+
+                  <div class="dropdown">
+                  <button class="btn btn-show dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  schedule
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+
                   <% activity.slots.each do |slot| %>
-                    <p class="links-dashboard"><%= slot.day %> <%= slot.time %> <% if slot.bookings.count > 0 %><%= link_to "see bookings", slot_bookings_path(slot) %><% end %></p>
-                  <% end %>
+                    <p class="dropdown-item"><%= slot.day %> <%= slot.time %><% if slot.bookings.count > 0 %> <%= link_to "see bookings", slot_bookings_path(slot) %> <% end %>
+                  <% end %></p>
+                  </div>
+                </div>
                 <% end %>
               <br>
                 <div class="links-dashboard mb-2">

@@ -13,20 +13,14 @@
     <% if @activity.photo.attached? %>
       <%= #cl_image_tag @activity.photo.key,crop: :fill %>
     <% end %>
-    <div class="mr-3 ml-3 mt-3 ">
-
+    <div class="mr-2 ml-2 mt-2">
       <h1><strong><%= @activity.name %></strong></h1>
       <p><%= @activity.description %></p>
-
-      <div class="icons text-left ml-4 my-4">
-      <p><strong>📍</strong><%= @activity.location%></p>
-      <div class="mt-4 ">
-      <h3><strong>⏰</strong><%= @activity.duration%>min</h3>
-      <div class="mt-4 ">
-      <h3><strong>🏷</strong><%= @activity.price %>€</h3>
-     </div>
-    </div>
-    </div>
+      <div class="icons text-left ml-3 my-2">
+      <p><strong>📍</strong> <%= @activity.location%></p>
+      <h3><strong>⏰</strong> <%= @activity.duration%>min</h3>
+      <h3><strong>🏷</strong> <%= @activity.price %>€</h3>
+      </div>
     </div>
 
 
